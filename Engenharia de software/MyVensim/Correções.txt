@@ -1,0 +1,14 @@
+CORREÇOES:
+
+- Corrigir o execute que escolher entre source ou destiny na função
+
+- Fazer o ultimo teste funcional mais completo
+
+- Fazer Teste unitario
+
+- Fazer Teste Funcional
+
+- Corrigir calculos que estão dando errado
+
+-
+

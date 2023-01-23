@@ -1,0 +1,73 @@
+CC=g++
+CFLAGS=-Wall -std=c++11
+
+build: main
+
+ # Build
+main: main.o
+	$(CC) $(CFLAGS) bin/*.o -o bin/main.exe
+
+main.o: Model.o
+	$(CC) $(CFLAGS) -o bin/main.o src/main.cpp -c
+
+Model.o: src/model_impl.cpp src/model.h src/model_impl.h Stock.o Flow.o
+	$(CC) $(CFLAGS) -o bin/model.o src/model_impl.cpp -c
+
+Stock.o: src/stock_impl.cpp src/stock.h src/stock_impl.h
+	$(CC) $(CFLAGS) -o bin/stock.o src/stock_impl.cpp -c
+
+Flow.o: src/flow_impl.cpp src/flow.h src/flow_impl.h
+	$(CC) $(CFLAGS) -o bin/flow.o src/flow_impl.cpp -c	
+
+ # Tests
+test: test_func test_unit
+
+   # Funcional
+test_func: test_func.o
+	$(CC) $(CFLAGS) bin/*.o -o bin/test_func.exe -L./dist/ -lMyVensim
+
+test_func.o: FuncionalTests.o
+	$(CC) $(CFLAGS) -o bin/main.o test/funcional/main.cpp -c
+
+FuncionalTests.o: Model.o
+	$(CC) $(CFLAGS) -o bin/funcionalTests.o test/funcional/funcional_tests.cpp -c
+
+   # Unit
+test_unit: test_unit.o
+	$(CC) $(CFLAGS) bin/*.o -o bin/test_unit.exe
+
+test_unit.o: UnitTestsStock.o UnitTestsModel.o UnitTestsFlow.o
+	$(CC) $(CFLAGS) -o bin/main.o test/unit/main.cpp -c
+
+UnitTestsStock.o: Stock.o
+	$(CC) $(CFLAGS) -o bin/unitTestsStock.o test/unit/unit_stock.cpp -c
+
+UnitTestsModel.o: Model.o
+	$(CC) $(CFLAGS) -o bin/unitTestsModel.o test/unit/unit_model.cpp -c
+
+UnitTestsFlow.o: Flow.o
+	$(CC) $(CFLAGS) -o bin/unitTestsFlow.o test/unit/unit_flow.cpp -c
+
+
+
+ # Dist
+dist: Model.o Flow.o Stock.o
+	$(CC) $(CFLAGS) -shared -o dist/MyVensim.dll bin/model.o bin/Stock.o bin/flow.o 
+	cp dist/MyVensim.dll bin/MyVensim.dll
+
+clean:
+	rm -rf bin/*
+
+ # Run
+run:
+	bin/main.exe
+
+test_run:
+	bin/test_func.exe
+	bin/test_unit.exe
+
+test_func_run:
+	bin/test_func.exe
+
+test_unit_run:
+	bin/test_unit.exe

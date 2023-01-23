@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['setcurrenttime_0',['setCurrentTime',['../classModel.html#ab9e4613c1d9a7751e307399c9fe8b00f',1,'Model::setCurrentTime()'],['../classModelBody.html#ab3635dfa87b6900074f5d58344ae10c4',1,'ModelBody::setCurrentTime()'],['../classModelHandle.html#a6e890c7061661522a647551ac7f04434',1,'ModelHandle::setCurrentTime()']]],
+  ['setdestiny_1',['setDestiny',['../classFlow.html#a88f2d79c9255d00dcd4d3a3aeb78b265',1,'Flow::setDestiny()'],['../classFlowBody.html#a146b29bc4075ce32214f44eb69df58e1',1,'FlowBody::setDestiny()'],['../classFlowHandle.html#a5b46c5bd1ed3bf155d304cd6cfb969fd',1,'FlowHandle::setDestiny()']]],
+  ['setfinaltime_2',['setFinalTime',['../classModelHandle.html#a4284922d6c21fe182b13ff84cbbbead9',1,'ModelHandle::setFinalTime()'],['../classModelBody.html#ae5a7038bf77519e7710be4fe63436bb5',1,'ModelBody::setFinalTime()'],['../classModel.html#a55b43c576ecc4309cf48297df95f825d',1,'Model::setFinalTime()']]],
+  ['setfunction_3',['setFunction',['../classFlowHandle.html#a4dcf8ed8a392284bd23fe8abbcb30f79',1,'FlowHandle::setFunction()'],['../classFlowBody.html#a7f3428e080018cd2ad3d66b9bd9c18cc',1,'FlowBody::setFunction()'],['../classFlow.html#a00133c285e4c34b7cdda8aa42b92261f',1,'Flow::setFunction(double(*f)(Stock *sto)=nullptr)=0']]],
+  ['setid_4',['setId',['../classFlow.html#ac0b26dd6bd4ee59c88f417766af67bf0',1,'Flow::setId()'],['../classFlowBody.html#a746deac16265bf93e02a8f14d6edd346',1,'FlowBody::setId()'],['../classFlowHandle.html#abe9ed5ccff219bed1ce8890eb16cb73e',1,'FlowHandle::setId()'],['../classModel.html#a5578a0820285e67ebfe1bd66f948adea',1,'Model::setId()'],['../classModelBody.html#a93c8f6de997fa248ce5d223fcc753355',1,'ModelBody::setId()'],['../classModelHandle.html#a0689d1a0d702e01dff4756cc1fe01f1c',1,'ModelHandle::setId()'],['../classStock.html#a5a2eade43a45689c75ecc1fca1993e14',1,'Stock::setId()'],['../classStockBody.html#ac2b76608c5d5a67530edc9d1b6bc2b86',1,'StockBody::setId()'],['../classStockHandle.html#af382ded89cff3a323d54a0ea8b014b32',1,'StockHandle::setId()']]],
+  ['setinitialtime_5',['setInitialTime',['../classModel.html#abd989fe0621b10ff86a7a4b6c2fa09f1',1,'Model::setInitialTime()'],['../classModelBody.html#aadb9bfe114079f69e03bb088b292ed79',1,'ModelBody::setInitialTime()'],['../classModelHandle.html#a10636454670484c97b63ea1ccab2a0cb',1,'ModelHandle::setInitialTime()']]],
+  ['setinitialvalue_6',['setInitialValue',['../classStock.html#ac7c98221c693f6cf950617fe48d29022',1,'Stock::setInitialValue()'],['../classStockBody.html#ab3a1bc0240207bb9c86caa74e56c95ca',1,'StockBody::setInitialValue()'],['../classStockHandle.html#af113a37f73b82522d398f58c6855b513',1,'StockHandle::setInitialValue()']]],
+  ['setlastvalue_7',['setLastValue',['../classFlow.html#a9335b9656dc3d3875378e79d361f6b0c',1,'Flow::setLastValue()'],['../classFlowBody.html#ad46a434d53e27a61dc345976b4ed0ffd',1,'FlowBody::setLastValue()'],['../classFlowHandle.html#a7af4474081c5af6572476483767bea77',1,'FlowHandle::setLastValue()']]],
+  ['setsource_8',['setSource',['../classFlow.html#a61ff0fb1e9d9b6816518d5a83df6124b',1,'Flow::setSource()'],['../classFlowBody.html#a8781a61f38b1b452a16b5fa3c4a5c27f',1,'FlowBody::setSource()'],['../classFlowHandle.html#a1d639e5fe8bdebc91403e0f435a5d18b',1,'FlowHandle::setSource()']]],
+  ['setvarbool_9',['setVarBool',['../classFlow.html#a5b587b8838b506db767401b1a5fa287f',1,'Flow::setVarBool()'],['../classFlowBody.html#a0564e929c8e59579dfcbb880aededb42',1,'FlowBody::setVarBool()'],['../classFlowHandle.html#ae95ceb8335c5f1084f671f27eff6d08f',1,'FlowHandle::setVarBool()']]],
+  ['source_10',['source',['../classFlowBody.html#ae5d642f8898275a59d09f23f1ae47aa7',1,'FlowBody']]],
+  ['stock_11',['Stock',['../classStock.html',1,'']]],
+  ['stock_2eh_12',['stock.h',['../stock_8h.html',1,'']]],
+  ['stock_5fimpl_2ecpp_13',['stock_impl.cpp',['../stock__impl_8cpp.html',1,'']]],
+  ['stock_5fimpl_2eh_14',['stock_impl.h',['../stock__impl_8h.html',1,'']]],
+  ['stockbody_15',['StockBody',['../classStockBody.html',1,'']]],
+  ['stockhandle_16',['StockHandle',['../classStockHandle.html',1,'StockHandle'],['../classStockHandle.html#a05d27942f90edbd6cbd0f6ae6456c6ac',1,'StockHandle::StockHandle()']]],
+  ['stocks_17',['stocks',['../classModelBody.html#aafd29cf6decaab4951c0addf824e3d1f',1,'ModelBody']]]
+];

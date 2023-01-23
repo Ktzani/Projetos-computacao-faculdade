@@ -1,0 +1,79 @@
+Primeira coisa que fiz foi testar a impressao da tabela mas sem a formataçao usando um
+arquivo que tinha no seu inicio dois diametros menores que o normal para matriz que no 
+caso foi 3 x 3. Pra isso, primeiro fiz um fscanf para pegar os diametros(n e m) do arquivo 
+e logo depois criei uma função para colocar os valores do arquivo ,por meio de um for, na 
+matriz[n][m]. Depois disso para imprimir a primeira tabela e ver se tinha funcionado fiz a 
+funçao imrpimir tabala que imprimia a matriz[n][m].Assim, inicei as funçoes dentro do main 
+e vi que tudo tinha funcionado de forma correta.
+
+
+Nesse inicio, fiquei meio confuso com arquivos, mas consegui mexer com 
+ele da forma correta ate o programa fucionar. E assim, ja meio cansado demorei para entender 
+como faria as peças se movimentarem e a primeira coisa q fiz em relaçao a isso foi criar um 
+prototipo de funçao para cada comando executado pelo usuario. Fiquei horas tentando entender 
+como faria esses comandos até que tive ajuda de um amigo que faz ciencias da computação na PUC
+em BH e ja está 1 periodo na frente e do Augusto, colega da faculdade. Os dois me explicaram como 
+funcionaria o movimento dos pinos para cada direçao e como eu faria isso nas funções. Usei laços 
+de repetiçao para cada comando, porém fiquei horas tentando entender como fazia os argumentos/
+coordenada do programa. Logo, deixei para mexer nas coordenadas outro dia. 
+
+Com os movimentos, prontos precisava apenas validar cada um. Assim, a primeira invalidaçao foi dentro 
+da funçao principal caso o usuario digitasse um comando inexistente e assim imprimia a tabela novamente
+e pedia para digitar outro comando e caso precisasse de saber eles de novo, perguntava se o jogador queria
+que mostrasse a lista de comandos novamente. A segunda invalidaçao era dentro de cada funçao para os 
+comandos caso não fosse possivel mover a peça em determinada direçao. Para isso, pensei nos movimentos em 
+quea peça ia bater na parede.
+
+Após isso, tentei fazer o comando ajuda, mas não consegui por hora. Entao, deixei para o final
+e fui fazer o tabuleiro aleatorio. Para isso tive ajuda do meu amigo de BH, Lucas Padrao novamente, 
+o qual me mostrou como funcionava a logica de  fazer esse tabuleiros aleatorios e as diversas formas 
+que poderia cria-los. Dessa forma, consegui criar não tabuleiros (// LEMBRARRRR) aleatorios e com 
+diversas posiçoes para a primeira posiçao do buraco vazio. Foi uma longo codigo o qual fiz em um 
+arquivo.c separado para conseguir pensar melhor. Consegui realizar o codigo com perfeição e criei uma
+uma função com esse código e com as suas devidas mudanças de acordo com o codigo do TP, porém não 
+sabia como realizar o codigo do TP de forma que não precisasse de digitar o argumento do arquivo a 
+ser buscado para iniciar o programa. Entao, pedi ajuda para o meus colegas Augusto, Pedro Lucas, Lucas
+Gomes e Robson Novato, os quais me falaram para criar um if para casa o argumento
+
+Após essa dificuldade, fiz a funçao pra imprimir ou não a mensagem de vitoria. Para funçao 
+'vitoriaderrota' tive uma grande dificuldade pra resolve-la, porem com a funçao 'ajuda' criada 
+consegui resolve-la. Primeiro, o contador de quantos pinos sobraram e se sobrar um o jogador vence
+Porém, se com o contador de sugestoes da funçao 'ajuda' tiver 0 sugestoes, quer dizer que o 
+jogador perdeu e o jogo acaba, porem não sei se o raciocinio está correto
+
+Logo, como falado, consegui realizar a funçao 'ajuda' com ajuda do meu colega Robson Novato. 
+Passei uma grandee dificuldade nessa questao, pois não sabia para onde ir e o que fazer, apesar 
+de ja ter ideias de fazer os movimentos de novo dentro da funçao "ajudar". Entao, com a ajuda 
+do meu colega Robson Novato, aluno da UFOP ele me deu dicas de como realiza-la, fazendo um 
+contador para a quantidade de ajudas possiveis e quando chegar na quantidade de ajudas que o 
+usuario pediu o 'for' para de rodar. Em cada ajuda, ela dá sugestoes dos movimentos possiveis 
+de se realizar
+
+Com tudo isso pronto, consegui realizar as cooredenas escolhidas pelo jogador transformado-as de 
+letras para numeros atraves da tabela ASCII e fiz uma funçao pra isso, em que por exemplo, a letra A
+possui um valor 65, tirei 65 dele e isso equivale ao numero 0 e pra isso fiz uma auxiliar para 
+cordenada coluna e para cordenada linha. Por meio disso, consegui imprimir a tabela com letras e
+consegui usar fazer os comandos de acordo com as cordenadas que o usuario escolheu.
+
+Com tudo isso feito, compilei o codigo e fui corrigindo os erros que neles estavam, como variaveis
+colocadas em lugares errados e o principal, problemas na hora do programar, principalmente com strings
+e caracteres. Para isso busquei ajuda de meus colegas novamente para me ajudarem e resolverem os erros 
+e, assim, os resolvi e tudo funcionou normalmente
+
+Com o codigo rodando perfeitamente(entrentanto, sem saber todos os raciocinios estavam corretos),
+por fim, apliquei as formatações necessarias , identei, colori e comentei todo meu codigo da forma 
+mais bonita para o usuario e, claro, os professores jogarem e com gosto kkkkkkk (e tambem 
+para lerem meu codigo de maneira mais clara). 
+
+
+
+
+Referencias: Aluno Augusto (UFOP)
+             Aluno Pedro Lucas Damasceno(UFOP)
+             Aluno Lucas Gomes dos Santos(UFOP)
+             Aluno Robson Novato Lobão (UFOP)
+             Tabela ASCII;
+             Professor Tulio;
+             Professor Puca;
+
+            

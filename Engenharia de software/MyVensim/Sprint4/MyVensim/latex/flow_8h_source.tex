@@ -1,0 +1,49 @@
+\hypertarget{flow_8h_source}{}\doxysection{flow.\+h}
+\label{flow_8h_source}\index{/mnt/c/Users/gabri/OneDrive/Documentos/GitHub/Faculdade/4º Período/Engenharia de Software 1/TP1/Sprint4/MyVensim/src/flow.h@{/mnt/c/Users/gabri/OneDrive/Documentos/GitHub/Faculdade/4º Período/Engenharia de Software 1/TP1/Sprint4/MyVensim/src/flow.h}}
+\mbox{\hyperlink{flow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef FLOW\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define FLOW\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{stock_8h}{stock.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{classFlow}{Flow}}\{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \textcolor{keyword}{virtual} \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{\string~Flow}}()\{\} }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlow_abed630b7b57e0eb7c5a360a55a0a5974}{connection}}(\mbox{\hyperlink{classStock}{Stock}}* source= \textcolor{keyword}{nullptr}, \mbox{\hyperlink{classStock}{Stock}}* destiny = \textcolor{keyword}{nullptr}) = 0;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{34     \textcolor{keyword}{virtual} \mbox{\hyperlink{classStock}{Stock}}* \mbox{\hyperlink{classFlow_a41d7b22923bf21c10d94ef72291d103d}{getSource}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{41     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlow_a61ff0fb1e9d9b6816518d5a83df6124b}{setSource}}(\mbox{\hyperlink{classStock}{Stock}}* source) = 0;}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{48     \textcolor{keyword}{virtual} \mbox{\hyperlink{classStock}{Stock}}* \mbox{\hyperlink{classFlow_afac31ee2bab218a01fddc2755b98f532}{getDestiny}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{55     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlow_a88f2d79c9255d00dcd4d3a3aeb78b265}{setDestiny}}(\mbox{\hyperlink{classStock}{Stock}}* destiny) = 0;}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{62     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{classFlow_aa3671632b52cdf4b3e30ce5921f4dc74}{getLastValue}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{69     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlow_a9335b9656dc3d3875378e79d361f6b0c}{setLastValue}}(\textcolor{keywordtype}{double} lastValue) = 0;}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{76     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{classFlow_ac69358e6b5c35ef74a79d3164fff9024}{getId}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     }
+\DoxyCodeLine{85     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlow_ac0b26dd6bd4ee59c88f417766af67bf0}{setId}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}) = 0;}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{91     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlow_a98e7aafb65699a9645a22f215b49c8b0}{clearSource}} () = 0;}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{97     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlow_afdd72b49ebdf7fed02ec61c0b6845227}{clearDestiny}} () = 0;}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{106     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classFlow_ae3dd3e476393b7f3d0a511091ae7ded3}{getVarBool}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{114     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlow_a5b587b8838b506db767401b1a5fa287f}{setVarBool}}(\textcolor{keywordtype}{bool} varBool) = 0;}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{121     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlow_a04367d0825863615101955f1d3f2c346}{execute}}() = 0;}
+\DoxyCodeLine{122 \};}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,144 @@
+\hypertarget{flow__impl_8h_source}{}\doxysection{flow\+\_\+impl.\+h}
+\label{flow__impl_8h_source}\index{/mnt/c/Users/gabri/OneDrive/Documentos/GitHub/Faculdade/4º Período/Engenharia de Software 1/TP1/Sprint6/MyVensim/src/flow\_impl.h@{/mnt/c/Users/gabri/OneDrive/Documentos/GitHub/Faculdade/4º Período/Engenharia de Software 1/TP1/Sprint6/MyVensim/src/flow\_impl.h}}
+\mbox{\hyperlink{flow__impl_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef FLOW\_IMPL\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define FLOW\_IMPL\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{flow_8h}{flow.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{stock_8h}{stock.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{handleBody_8h}{handleBody.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{classFlowBody}{FlowBody}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBody}{Body}}\{}
+\DoxyCodeLine{16     }
+\DoxyCodeLine{17 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{classStock}{Stock}} *\mbox{\hyperlink{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}{source}};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{28     \mbox{\hyperlink{classStock}{Stock}} *\mbox{\hyperlink{classFlowBody_a7cc17b7dbf4491489140a12d99b6253d}{destiny}};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} \mbox{\hyperlink{classFlowBody_a2cb93398e081cc8dd91a2aa293a75163}{ID}};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{41     double (*\mbox{\hyperlink{classFlowBody_afbde94caaeef644d319be56c06bbf3ae}{function}}) (\mbox{\hyperlink{classStock}{Stock}}* sto);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{double} \mbox{\hyperlink{classFlowBody_a5c51f161df85c2211182aa5668b3bb72}{lastValue}};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classFlowBody_ab4f905165df617a5c6624345459490ed}{varBool}};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{comment}{// private:}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{comment}{// /**}}
+\DoxyCodeLine{59     \textcolor{comment}{//  * @brief Construct a new copy Flow object }}
+\DoxyCodeLine{60     \textcolor{comment}{//  * }}
+\DoxyCodeLine{61     \textcolor{comment}{//  */}}
+\DoxyCodeLine{62     \textcolor{comment}{// MyFlow(const Flow\&);}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \textcolor{comment}{// /**}}
+\DoxyCodeLine{65     \textcolor{comment}{//  * @brief Overload of the Assignment operator }}
+\DoxyCodeLine{66     \textcolor{comment}{//  * }}
+\DoxyCodeLine{67     \textcolor{comment}{//  * @return Flow\& }}
+\DoxyCodeLine{68     \textcolor{comment}{//  */}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{comment}{// Flow\& operator= (const Flow\&);}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \textcolor{keyword}{public}:}
+\DoxyCodeLine{73     \textcolor{comment}{// Flow();}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{79     \textcolor{comment}{// MyFlow(Stock* = nullptr, Stock* = nullptr, int = 0, double (*)(Stock*) = nullptr, bool = true);}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{85     \textcolor{comment}{// virtual \string~FlowBody(); }}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowBody_a1191356aea65e17b2b170d6bcdf3bab8}{connection}}(\mbox{\hyperlink{classStock}{Stock}}* \mbox{\hyperlink{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}{source}} = \textcolor{keyword}{nullptr}, \mbox{\hyperlink{classStock}{Stock}}* \mbox{\hyperlink{classFlowBody_a7cc17b7dbf4491489140a12d99b6253d}{destiny}} = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{100     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowBody_a7f3428e080018cd2ad3d66b9bd9c18cc}{setFunction}}(\textcolor{keywordtype}{double} (*f)(\mbox{\hyperlink{classStock}{Stock}}* sto) = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{107     \mbox{\hyperlink{classStock}{Stock}}* \mbox{\hyperlink{classFlowBody_a6ed64af86ed57b0fe40b5b7406631494}{getSource}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{114     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowBody_a8781a61f38b1b452a16b5fa3c4a5c27f}{setSource}}(\mbox{\hyperlink{classStock}{Stock}}* \mbox{\hyperlink{classFlowBody_ae5d642f8898275a59d09f23f1ae47aa7}{source}});}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{121     \mbox{\hyperlink{classStock}{Stock}}* \mbox{\hyperlink{classFlowBody_ad16bbbc966d76c53df51e7bcb97d89e5}{getDestiny}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{128     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowBody_a146b29bc4075ce32214f44eb69df58e1}{setDestiny}}(\mbox{\hyperlink{classStock}{Stock}}* \mbox{\hyperlink{classFlowBody_a7cc17b7dbf4491489140a12d99b6253d}{destiny}});}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{135     \textcolor{keywordtype}{double} \mbox{\hyperlink{classFlowBody_af80d9f724fb44e3760670746f0407a43}{getLastValue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{142     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowBody_ad46a434d53e27a61dc345976b4ed0ffd}{setLastValue}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{classFlowBody_a5c51f161df85c2211182aa5668b3bb72}{lastValue}});}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{149     \textcolor{keywordtype}{int} \mbox{\hyperlink{classFlowBody_aab1fddf5760f8bc11f16d76f1dbfec61}{getId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{157     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowBody_a746deac16265bf93e02a8f14d6edd346}{setId}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{163     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowBody_a4eb88d2ce3002ec82bb54980dfed2a41}{clearSource}} ();}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{169     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowBody_a6901bdea425cd3b1980586b6e28ca29d}{clearDestiny}} ();}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{178     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classFlowBody_a0e9f59cbba35fc3b51700c87bdf53a17}{getVarBool}}() \textcolor{keyword}{const} ;}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{186     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowBody_a0564e929c8e59579dfcbb880aededb42}{setVarBool}}(\textcolor{keywordtype}{bool} \mbox{\hyperlink{classFlowBody_ab4f905165df617a5c6624345459490ed}{varBool}});}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{193     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowBody_a88cab3420b0a5bbcec32b5f874fd292c}{execute}}();}
+\DoxyCodeLine{194     }
+\DoxyCodeLine{195 \};}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197 \textcolor{keyword}{class }\mbox{\hyperlink{classFlowHandle}{FlowHandle}}: \textcolor{keyword}{public} \mbox{\hyperlink{classFlow}{Flow}}, \textcolor{keyword}{public} \mbox{\hyperlink{classHandle}{Handle}}<FlowBody>\{}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{199 \textcolor{keyword}{public}:}
+\DoxyCodeLine{200     \mbox{\hyperlink{classFlowHandle_a7c67b13e89dc18827406179f8a0be1f4}{FlowHandle}}(\mbox{\hyperlink{classStock}{Stock}}* source = \textcolor{keyword}{nullptr}, \mbox{\hyperlink{classStock}{Stock}}* destiny = \textcolor{keyword}{nullptr}, \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = 0, \textcolor{keywordtype}{double} (*f)(\mbox{\hyperlink{classStock}{Stock}}* sto) = \textcolor{keyword}{nullptr}, \textcolor{keywordtype}{bool} varBool = \textcolor{keyword}{true})\{}
+\DoxyCodeLine{201         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a8781a61f38b1b452a16b5fa3c4a5c27f}{setSource}}(source);}
+\DoxyCodeLine{202         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a146b29bc4075ce32214f44eb69df58e1}{setDestiny}}(destiny);}
+\DoxyCodeLine{203         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a746deac16265bf93e02a8f14d6edd346}{setId}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{204         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a7f3428e080018cd2ad3d66b9bd9c18cc}{setFunction}}(f);}
+\DoxyCodeLine{205         \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a0564e929c8e59579dfcbb880aededb42}{setVarBool}}(varBool);}
+\DoxyCodeLine{206     \}}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208     \textcolor{keyword}{virtual} \mbox{\hyperlink{classFlowHandle_acec255198c28118981e7bb62194fe9e2}{\string~FlowHandle}}()\{\}}
+\DoxyCodeLine{209 }
+\DoxyCodeLine{210     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowHandle_a48c0ff68dde2696d3f47d34e7c6b12bc}{connection}}(\mbox{\hyperlink{classStock}{Stock}}* source= \textcolor{keyword}{nullptr}, \mbox{\hyperlink{classStock}{Stock}}* destiny = \textcolor{keyword}{nullptr}) \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a1191356aea65e17b2b170d6bcdf3bab8}{connection}}(source, destiny);\}}
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowHandle_a4dcf8ed8a392284bd23fe8abbcb30f79}{setFunction}}(\textcolor{keywordtype}{double} (*f)(\mbox{\hyperlink{classStock}{Stock}}*sto) = \textcolor{keyword}{nullptr})\{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a7f3428e080018cd2ad3d66b9bd9c18cc}{setFunction}}(f);\}}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214     \mbox{\hyperlink{classStock}{Stock}}* \mbox{\hyperlink{classFlowHandle_adde95faf6f6a582c5a379840715d0ff1}{getSource}}()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a6ed64af86ed57b0fe40b5b7406631494}{getSource}}();\}}
+\DoxyCodeLine{215 }
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowHandle_a1d639e5fe8bdebc91403e0f435a5d18b}{setSource}}(\mbox{\hyperlink{classStock}{Stock}}* source) \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a8781a61f38b1b452a16b5fa3c4a5c27f}{setSource}}(source);\}}
+\DoxyCodeLine{218 }
+\DoxyCodeLine{219 }
+\DoxyCodeLine{220     \mbox{\hyperlink{classStock}{Stock}}* \mbox{\hyperlink{classFlowHandle_ae7db6c3afb4a405f6fdcac849fd949e0}{getDestiny}}()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_ad16bbbc966d76c53df51e7bcb97d89e5}{getDestiny}}();\}}
+\DoxyCodeLine{221 }
+\DoxyCodeLine{222 }
+\DoxyCodeLine{223     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowHandle_a5b46c5bd1ed3bf155d304cd6cfb969fd}{setDestiny}}(\mbox{\hyperlink{classStock}{Stock}}* destiny) \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a146b29bc4075ce32214f44eb69df58e1}{setDestiny}}(destiny);\}}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225 }
+\DoxyCodeLine{226     \textcolor{keywordtype}{double} \mbox{\hyperlink{classFlowHandle_ad6a06fdd88b0a421dbfdfe3276627cda}{getLastValue}}()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_af80d9f724fb44e3760670746f0407a43}{getLastValue}}();\}}
+\DoxyCodeLine{227 }
+\DoxyCodeLine{228 }
+\DoxyCodeLine{229     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowHandle_a7af4474081c5af6572476483767bea77}{setLastValue}}(\textcolor{keywordtype}{double} lastValue) \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_ad46a434d53e27a61dc345976b4ed0ffd}{setLastValue}}(lastValue);\}}
+\DoxyCodeLine{230 }
+\DoxyCodeLine{231 }
+\DoxyCodeLine{232     \textcolor{keywordtype}{int} \mbox{\hyperlink{classFlowHandle_a5e6317ed1dfc3fdfd60c19611073468c}{getId}}()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_aab1fddf5760f8bc11f16d76f1dbfec61}{getId}}();\}}
+\DoxyCodeLine{233 }
+\DoxyCodeLine{234 }
+\DoxyCodeLine{235     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowHandle_abe9ed5ccff219bed1ce8890eb16cb73e}{setId}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}) \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a746deac16265bf93e02a8f14d6edd346}{setId}}(\textcolor{keywordtype}{id});\}}
+\DoxyCodeLine{236 }
+\DoxyCodeLine{237 }
+\DoxyCodeLine{238     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowHandle_af9c7145cfe3e7c37b4863ac0f4c7e7b9}{clearSource}} () \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a4eb88d2ce3002ec82bb54980dfed2a41}{clearSource}}();\}}
+\DoxyCodeLine{239 }
+\DoxyCodeLine{240 }
+\DoxyCodeLine{241     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowHandle_a641baca7c8e0c8a17aee35354e985ee7}{clearDestiny}} () \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a6901bdea425cd3b1980586b6e28ca29d}{clearDestiny}}();\}}
+\DoxyCodeLine{242 }
+\DoxyCodeLine{243 }
+\DoxyCodeLine{244     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classFlowHandle_ac1caaab8503cd3156777ee92b2f7f230}{getVarBool}}()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a0e9f59cbba35fc3b51700c87bdf53a17}{getVarBool}}();\}}
+\DoxyCodeLine{245 }
+\DoxyCodeLine{246 }
+\DoxyCodeLine{247     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowHandle_ae95ceb8335c5f1084f671f27eff6d08f}{setVarBool}}(\textcolor{keywordtype}{bool} varBool) \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a0564e929c8e59579dfcbb880aededb42}{setVarBool}}(varBool);\}}
+\DoxyCodeLine{248 }
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFlowHandle_a0b83987fa66ee9ca87db87e2c6ea1aca}{execute}}() \{ \mbox{\hyperlink{classHandle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{classFlowBody_a88cab3420b0a5bbcec32b5f874fd292c}{execute}}();\}}
+\DoxyCodeLine{251 }
+\DoxyCodeLine{252 \};}
+\DoxyCodeLine{253 }
+\DoxyCodeLine{254 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

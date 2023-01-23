@@ -1,0 +1,45 @@
+\hypertarget{stock__impl_8h_source}{}\doxysection{stock\+\_\+impl.\+h}
+\label{stock__impl_8h_source}\index{/mnt/c/Users/gabri/OneDrive/Documentos/GitHub/Faculdade/4º Período/Engenharia de Software 1/TP1/Sprint4/MyVensim/src/stock\_impl.h@{/mnt/c/Users/gabri/OneDrive/Documentos/GitHub/Faculdade/4º Período/Engenharia de Software 1/TP1/Sprint4/MyVensim/src/stock\_impl.h}}
+\mbox{\hyperlink{stock__impl_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef STOCK\_IMPL\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define STOCK\_IMPL\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{stock_8h}{stock.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{classMyStock}{MyStock}} : \textcolor{keyword}{public} \mbox{\hyperlink{classStock}{Stock}}\{}
+\DoxyCodeLine{18 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{23     \textcolor{keywordtype}{double} \mbox{\hyperlink{classMyStock_a173d7cb775ee9d36bdb7e71269b5059a}{value}};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{string} \mbox{\hyperlink{classMyStock_ad4f00be6ee981e6e929e34da0998c8fe}{ID}};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{private}:}
+\DoxyCodeLine{32     \mbox{\hyperlink{classMyStock}{MyStock}}(\textcolor{keyword}{const} \mbox{\hyperlink{classStock}{Stock}}\&);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \mbox{\hyperlink{classStock}{Stock}}\& operator= (\textcolor{keyword}{const} \mbox{\hyperlink{classStock}{Stock}}\&);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{public}:}
+\DoxyCodeLine{37     }
+\DoxyCodeLine{38     \textcolor{comment}{// Stock();}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{44     \mbox{\hyperlink{classMyStock}{MyStock}}(\textcolor{keywordtype}{double} = 0, \textcolor{keyword}{const} \textcolor{keywordtype}{string} = \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{51     \textcolor{keyword}{virtual} \mbox{\hyperlink{classMyStock_a881752aa60552e258805397bd8ae186f}{\string~MyStock}}(); }
+\DoxyCodeLine{52 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{double} \mbox{\hyperlink{classMyStock_a4824830249ab9eb99cc6d93db701a027}{getInitialValue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{60     }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMyStock_a3d1e6dd16474fdbf8f151798b4fbb63d}{setInitialValue}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{classMyStock_a173d7cb775ee9d36bdb7e71269b5059a}{value}});}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{string} \mbox{\hyperlink{classMyStock_afe86f25da6fe35aa1effda405405b102}{getId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMyStock_a6e476f639630c85d16640bdb61744d63}{setId}}(\textcolor{keywordtype}{string} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 \};}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "xlocmon": "cpp",
+        "xlocnum": "cpp",
+        "xtr1common": "cpp",
+        "xlocale": "cpp",
+        "xstring": "cpp",
+        "xloctime": "cpp",
+        "vector": "cpp",
+        "xmemory": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "xutility": "cpp"
+    }
+}

@@ -1,0 +1,484 @@
+\hypertarget{classModelHandle}{}\doxysection{Model\+Handle Class Reference}
+\label{classModelHandle}\index{ModelHandle@{ModelHandle}}
+
+
+{\ttfamily \#include $<$model\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for Model\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classModelHandle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Model\+Handle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classModelHandle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classModelHandle_aabb8dc2384d5f94e8aa581f539e439d8}{Model\+Handle}} (double initial\+Time=0, double final\+Time=100, int id=0)
+\item 
+void \mbox{\hyperlink{classModelHandle_a85e858a49bdea9189d9dc4a23b00d8b3}{add}} (\mbox{\hyperlink{classModel}{Model}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Adds a model to the factory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelHandle_a0abbe24c01111868cef86bb235d110cb}{add}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$sto)
+\begin{DoxyCompactList}\small\item\em Adds only a \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classModel}{Model}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelHandle_aa18ec5ad2199ba55add8c1edd3552ea9}{add}} (\mbox{\hyperlink{classFlow}{Flow}} $\ast$flu)
+\begin{DoxyCompactList}\small\item\em Adds only a \mbox{\hyperlink{classFlow}{Flow}} to the \mbox{\hyperlink{classModel}{Model}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelHandle_af1992242531556bf5ba73b5570643668}{add}} (\mbox{\hyperlink{classFlow}{Flow}} $\ast$flu, \mbox{\hyperlink{classStock}{Stock}} $\ast$source, \mbox{\hyperlink{classStock}{Stock}} $\ast$destiny)
+\begin{DoxyCompactList}\small\item\em Adds a \mbox{\hyperlink{classFlow}{Flow}} and its two Stocks to the \mbox{\hyperlink{classModel}{Model}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classModelHandle_a8b716b0c3f7204c4b9472582325f3766}{create\+Stock}} (double value, string id)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classStock}{Stock}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlow}{Flow}} $\ast$ \mbox{\hyperlink{classModelHandle_a8b0471135e00885a33b26bd7d5539d14}{create\+Flow}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$source, \mbox{\hyperlink{classStock}{Stock}} $\ast$destiny, int id, double($\ast$f)(\mbox{\hyperlink{classStock}{Stock}} $\ast$sto), bool var\+Bool)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classFlow}{Flow}} object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classModelHandle_a0469aeec08cfbc32cb3daf75e444a58f}{get\+Current\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Get the Current Time object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelHandle_a6e890c7061661522a647551ac7f04434}{set\+Current\+Time}} (double current\+Time)
+\begin{DoxyCompactList}\small\item\em Set the Current Time object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classModelHandle_a885f9391c16c353622c31b7c5e283043}{get\+Initial\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Get the Initial Time object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelHandle_a10636454670484c97b63ea1ccab2a0cb}{set\+Initial\+Time}} (double initial\+Time)
+\begin{DoxyCompactList}\small\item\em Set the Initial Time object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classModelHandle_a7c058178b734b0823b931df0e33699ce}{get\+Final\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Get the Final Time object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelHandle_a4284922d6c21fe182b13ff84cbbbead9}{set\+Final\+Time}} (double final\+Time)
+\begin{DoxyCompactList}\small\item\em Set the Final Time object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classModelHandle_a5f7104bea2aa4b364366eb353697e2ec}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get the Id object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelHandle_a0689d1a0d702e01dff4756cc1fe01f1c}{set\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Set the Id object. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classStock}{Stock}} $\ast$ $>$ \mbox{\hyperlink{classModelHandle_a82c881f65bfa2493e777f1525c6476d3}{get\+Stocks}} () const
+\begin{DoxyCompactList}\small\item\em Get the Stocks object. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classFlow}{Flow}} $\ast$ $>$ \mbox{\hyperlink{classModelHandle_a0829303442d727a2a3c0ede55b7a48e4}{get\+Flows}} () const
+\begin{DoxyCompactList}\small\item\em Get the Flows object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelHandle_ab29211b46e9861ada195ebbf16a0561f}{remove}} (string id\+Stock)
+\begin{DoxyCompactList}\small\item\em Removes a \mbox{\hyperlink{classStock}{Stock}} from the \mbox{\hyperlink{classModel}{Model}} by it ID (name) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelHandle_a1cba210afb15635fa6fe3401c5b413d7}{remove}} (int id\+Flow)
+\begin{DoxyCompactList}\small\item\em Removes a \mbox{\hyperlink{classFlow}{Flow}} from the \mbox{\hyperlink{classModel}{Model}} by it ID (number) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelHandle_ab7ec0d5f09bca32b7c421c4ff3c58745}{run}} ()
+\begin{DoxyCompactList}\small\item\em Runs all the functions of the Flows in a certain period of time and stores the value of each execution in each source and destiny. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelHandle_a680afda39eea1c076f0b8bc50ce9ef67}{print\+\_\+results}} ()
+\begin{DoxyCompactList}\small\item\em prints the value of each \mbox{\hyperlink{classStock}{Stock}} with it ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModelHandle_aabb8dc2384d5f94e8aa581f539e439d8}\label{classModelHandle_aabb8dc2384d5f94e8aa581f539e439d8}} 
+\index{ModelHandle@{ModelHandle}!ModelHandle@{ModelHandle}}
+\index{ModelHandle@{ModelHandle}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{ModelHandle()}{ModelHandle()}}
+{\footnotesize\ttfamily Model\+Handle\+::\+Model\+Handle (\begin{DoxyParamCaption}\item[{double}]{initial\+Time = {\ttfamily 0},  }\item[{double}]{final\+Time = {\ttfamily 100},  }\item[{int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classModelHandle_aa18ec5ad2199ba55add8c1edd3552ea9}\label{classModelHandle_aa18ec5ad2199ba55add8c1edd3552ea9}} 
+\index{ModelHandle@{ModelHandle}!add@{add}}
+\index{add@{add}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Model\+Handle\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} $\ast$}]{flu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Adds only a \mbox{\hyperlink{classFlow}{Flow}} to the \mbox{\hyperlink{classModel}{Model}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flu} & -\/ New \mbox{\hyperlink{classFlow}{Flow}} to the \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_a0783386e3c2d18c0e9c457baa71325cb}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_af1992242531556bf5ba73b5570643668}\label{classModelHandle_af1992242531556bf5ba73b5570643668}} 
+\index{ModelHandle@{ModelHandle}!add@{add}}
+\index{add@{add}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Model\+Handle\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} $\ast$}]{flu,  }\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{source,  }\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{destiny }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Adds a \mbox{\hyperlink{classFlow}{Flow}} and its two Stocks to the \mbox{\hyperlink{classModel}{Model}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flu} & -\/ New \mbox{\hyperlink{classFlow}{Flow}} to the \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+{\em source} & -\/ New \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classModel}{Model}} (source of the \mbox{\hyperlink{classFlow}{Flow}} added) \\
+\hline
+{\em destiny} & -\/ New \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classModel}{Model}} (destiny of the \mbox{\hyperlink{classFlow}{Flow}} added) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_aec0f61f2b0775b70966925ab633705b3}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a85e858a49bdea9189d9dc4a23b00d8b3}\label{classModelHandle_a85e858a49bdea9189d9dc4a23b00d8b3}} 
+\index{ModelHandle@{ModelHandle}!add@{add}}
+\index{add@{add}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Model\+Handle\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classModel}{Model}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Adds a model to the factory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ New \mbox{\hyperlink{classModel}{Model}} to the factory \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_aabde70da040c286c02508eb697381848}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a0abbe24c01111868cef86bb235d110cb}\label{classModelHandle_a0abbe24c01111868cef86bb235d110cb}} 
+\index{ModelHandle@{ModelHandle}!add@{add}}
+\index{add@{add}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Model\+Handle\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{sto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Adds only a \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classModel}{Model}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sto} & -\/ New \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_a68c5ccf5dac67c0afcf8b374b7a71d94}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a8b0471135e00885a33b26bd7d5539d14}\label{classModelHandle_a8b0471135e00885a33b26bd7d5539d14}} 
+\index{ModelHandle@{ModelHandle}!createFlow@{createFlow}}
+\index{createFlow@{createFlow}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{createFlow()}{createFlow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlow}{Flow}} $\ast$ Model\+Handle\+::create\+Flow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{source,  }\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{destiny,  }\item[{int}]{id,  }\item[{double($\ast$)(\mbox{\hyperlink{classStock}{Stock}} $\ast$sto)}]{f,  }\item[{bool}]{var\+Bool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Create a \mbox{\hyperlink{classFlow}{Flow}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+{\em destiny} & \\
+\hline
+{\em id} & \\
+\hline
+{\em f} & \\
+\hline
+{\em var\+Bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Flow$\ast$ that has been created 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a3575a680dd4301b265070283a09aea3a}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a8b716b0c3f7204c4b9472582325f3766}\label{classModelHandle_a8b716b0c3f7204c4b9472582325f3766}} 
+\index{ModelHandle@{ModelHandle}!createStock@{createStock}}
+\index{createStock@{createStock}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{createStock()}{createStock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStock}{Stock}} $\ast$ Model\+Handle\+::create\+Stock (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Create a \mbox{\hyperlink{classStock}{Stock}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Stock$\ast$ that has been created 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a44895f2e50b0e25eda9e9ce5ec4bdfd4}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a0469aeec08cfbc32cb3daf75e444a58f}\label{classModelHandle_a0469aeec08cfbc32cb3daf75e444a58f}} 
+\index{ModelHandle@{ModelHandle}!getCurrentTime@{getCurrentTime}}
+\index{getCurrentTime@{getCurrentTime}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{getCurrentTime()}{getCurrentTime()}}
+{\footnotesize\ttfamily double Model\+Handle\+::get\+Current\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Current Time object. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a5d0a069f36e0672898e4fb1155b10c1a}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a7c058178b734b0823b931df0e33699ce}\label{classModelHandle_a7c058178b734b0823b931df0e33699ce}} 
+\index{ModelHandle@{ModelHandle}!getFinalTime@{getFinalTime}}
+\index{getFinalTime@{getFinalTime}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{getFinalTime()}{getFinalTime()}}
+{\footnotesize\ttfamily double Model\+Handle\+::get\+Final\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Final Time object. 
+
+\begin{DoxyReturn}{Returns}
+double returned the Final time of the execution 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a26e822e664776243f1efe633a783e7a6}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a0829303442d727a2a3c0ede55b7a48e4}\label{classModelHandle_a0829303442d727a2a3c0ede55b7a48e4}} 
+\index{ModelHandle@{ModelHandle}!getFlows@{getFlows}}
+\index{getFlows@{getFlows}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{getFlows()}{getFlows()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classFlow}{Flow}} $\ast$ $>$ Model\+Handle\+::get\+Flows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Flows object. 
+
+\begin{DoxyReturn}{Returns}
+vector \texorpdfstring{$<$}{<}Flow$\ast$\texorpdfstring{$>$}{>} returned all the Flows added to the \mbox{\hyperlink{classModel}{Model}} ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_aa747630ddc45b81ae8963f2a0ee5e088}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a5f7104bea2aa4b364366eb353697e2ec}\label{classModelHandle_a5f7104bea2aa4b364366eb353697e2ec}} 
+\index{ModelHandle@{ModelHandle}!getId@{getId}}
+\index{getId@{getId}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Model\+Handle\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Id object. 
+
+\begin{DoxyReturn}{Returns}
+int returned the ID of the \mbox{\hyperlink{classModel}{Model}}, which identifies it 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a822182451706920ac3251529fcb58c17}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a885f9391c16c353622c31b7c5e283043}\label{classModelHandle_a885f9391c16c353622c31b7c5e283043}} 
+\index{ModelHandle@{ModelHandle}!getInitialTime@{getInitialTime}}
+\index{getInitialTime@{getInitialTime}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{getInitialTime()}{getInitialTime()}}
+{\footnotesize\ttfamily double Model\+Handle\+::get\+Initial\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Initial Time object. 
+
+\begin{DoxyReturn}{Returns}
+double returned the Initial time of the execution 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a00c5d6f23a8c7e77bda0ac47aed34eb7}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a82c881f65bfa2493e777f1525c6476d3}\label{classModelHandle_a82c881f65bfa2493e777f1525c6476d3}} 
+\index{ModelHandle@{ModelHandle}!getStocks@{getStocks}}
+\index{getStocks@{getStocks}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{getStocks()}{getStocks()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classStock}{Stock}} $\ast$ $>$ Model\+Handle\+::get\+Stocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Stocks object. 
+
+\begin{DoxyReturn}{Returns}
+vector \texorpdfstring{$<$}{<}Stock$\ast$\texorpdfstring{$>$}{>} returned all the Stocks added to the \mbox{\hyperlink{classModel}{Model}} ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a03cebebf8ce355a2fb25c3cf0af77a98}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a680afda39eea1c076f0b8bc50ce9ef67}\label{classModelHandle_a680afda39eea1c076f0b8bc50ce9ef67}} 
+\index{ModelHandle@{ModelHandle}!print\_results@{print\_results}}
+\index{print\_results@{print\_results}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{print\_results()}{print\_results()}}
+{\footnotesize\ttfamily void Model\+Handle\+::print\+\_\+results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+prints the value of each \mbox{\hyperlink{classStock}{Stock}} with it ID 
+
+
+
+Implements \mbox{\hyperlink{classModel_aa57fda99cf41d688d873da3ffe61f53e}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a1cba210afb15635fa6fe3401c5b413d7}\label{classModelHandle_a1cba210afb15635fa6fe3401c5b413d7}} 
+\index{ModelHandle@{ModelHandle}!remove@{remove}}
+\index{remove@{remove}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Model\+Handle\+::remove (\begin{DoxyParamCaption}\item[{int}]{id\+Flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Removes a \mbox{\hyperlink{classFlow}{Flow}} from the \mbox{\hyperlink{classModel}{Model}} by it ID (number) 
+
+\begin{DoxyReturn}{Returns}
+true if the operation of removing the \mbox{\hyperlink{classFlow}{Flow}} it is sucessful 
+
+false if the operation of removing the \mbox{\hyperlink{classFlow}{Flow}} it isn\textquotesingle{}t successful
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Flow} & -\/ number of the \mbox{\hyperlink{classFlow}{Flow}} which is going to be removed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_ad09bcd06190f17aedea0f8b141c2f2d3}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_ab29211b46e9861ada195ebbf16a0561f}\label{classModelHandle_ab29211b46e9861ada195ebbf16a0561f}} 
+\index{ModelHandle@{ModelHandle}!remove@{remove}}
+\index{remove@{remove}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Model\+Handle\+::remove (\begin{DoxyParamCaption}\item[{string}]{id\+Stock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Removes a \mbox{\hyperlink{classStock}{Stock}} from the \mbox{\hyperlink{classModel}{Model}} by it ID (name) 
+
+\begin{DoxyReturn}{Returns}
+true if the operation of removing the \mbox{\hyperlink{classStock}{Stock}} it is sucessful 
+
+false if the operation of removing the \mbox{\hyperlink{classStock}{Stock}} it isn\textquotesingle{}t successful
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Stock} & -\/ name of the \mbox{\hyperlink{classStock}{Stock}} which is going to be removed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_a412c4b98c018fe12835780e3bae17619}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_ab7ec0d5f09bca32b7c421c4ff3c58745}\label{classModelHandle_ab7ec0d5f09bca32b7c421c4ff3c58745}} 
+\index{ModelHandle@{ModelHandle}!run@{run}}
+\index{run@{run}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool Model\+Handle\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Runs all the functions of the Flows in a certain period of time and stores the value of each execution in each source and destiny. 
+
+\begin{DoxyReturn}{Returns}
+true if the execution of all Flows was successful 
+
+false if the execution of one of the Flows wasn´t successful 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_a459b1a5044aa3ed60dd8d56b3f0596f6}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a6e890c7061661522a647551ac7f04434}\label{classModelHandle_a6e890c7061661522a647551ac7f04434}} 
+\index{ModelHandle@{ModelHandle}!setCurrentTime@{setCurrentTime}}
+\index{setCurrentTime@{setCurrentTime}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{setCurrentTime()}{setCurrentTime()}}
+{\footnotesize\ttfamily void Model\+Handle\+::set\+Current\+Time (\begin{DoxyParamCaption}\item[{double}]{current\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Current Time object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & -\/ New current time in each execution of the model \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_ab9e4613c1d9a7751e307399c9fe8b00f}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a4284922d6c21fe182b13ff84cbbbead9}\label{classModelHandle_a4284922d6c21fe182b13ff84cbbbead9}} 
+\index{ModelHandle@{ModelHandle}!setFinalTime@{setFinalTime}}
+\index{setFinalTime@{setFinalTime}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{setFinalTime()}{setFinalTime()}}
+{\footnotesize\ttfamily void Model\+Handle\+::set\+Final\+Time (\begin{DoxyParamCaption}\item[{double}]{final\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Final Time object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em final\+Time} & -\/ New final time of the period of the execution \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_a55b43c576ecc4309cf48297df95f825d}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a0689d1a0d702e01dff4756cc1fe01f1c}\label{classModelHandle_a0689d1a0d702e01dff4756cc1fe01f1c}} 
+\index{ModelHandle@{ModelHandle}!setId@{setId}}
+\index{setId@{setId}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void Model\+Handle\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Id object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ New ID to identifies the \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_a5578a0820285e67ebfe1bd66f948adea}{Model}}.
+
+\mbox{\Hypertarget{classModelHandle_a10636454670484c97b63ea1ccab2a0cb}\label{classModelHandle_a10636454670484c97b63ea1ccab2a0cb}} 
+\index{ModelHandle@{ModelHandle}!setInitialTime@{setInitialTime}}
+\index{setInitialTime@{setInitialTime}!ModelHandle@{ModelHandle}}
+\doxysubsubsection{\texorpdfstring{setInitialTime()}{setInitialTime()}}
+{\footnotesize\ttfamily void Model\+Handle\+::set\+Initial\+Time (\begin{DoxyParamCaption}\item[{double}]{initial\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Initial Time object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Time} & -\/ New initial time of the period of the execution \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_abd989fe0621b10ff86a7a4b6c2fa09f1}{Model}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/gabri/\+One\+Drive/\+Documentos/\+Git\+Hub/\+Faculdade/4º Período/\+Engenharia de Software 1/\+TP1/\+Sprint6/\+My\+Vensim/src/\mbox{\hyperlink{model__impl_8h}{model\+\_\+impl.\+h}}\end{DoxyCompactItemize}

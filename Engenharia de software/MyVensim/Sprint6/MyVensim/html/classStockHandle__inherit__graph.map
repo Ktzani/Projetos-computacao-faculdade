@@ -1,0 +1,5 @@
+<map id="StockHandle" name="StockHandle">
+<area shape="rect" id="node1" title="Class responsible for storing a certain value that will be used later to execute functions of the Flo..." alt="" coords="95,189,236,340"/>
+<area shape="rect" id="node2" href="$classStock.html" title="Stock Interface: Class responsible for storing a certain value that will be used later to execute fun..." alt="" coords="5,5,147,141"/>
+<area shape="rect" id="node3" href="$classHandle.html" title=" " alt="" coords="171,13,338,134"/>
+</map>

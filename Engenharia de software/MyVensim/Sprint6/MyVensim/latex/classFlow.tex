@@ -1,0 +1,352 @@
+\hypertarget{classFlow}{}\doxysection{Flow Class Reference}
+\label{classFlow}\index{Flow@{Flow}}
+
+
+\mbox{\hyperlink{classFlow}{Flow}} Interface\+: Class responsable to make a \mbox{\hyperlink{classFlow}{Flow}} which is going to pass by it a certain value decided by a function.  
+
+
+
+
+{\ttfamily \#include $<$flow.\+h$>$}
+
+
+
+Inheritance diagram for Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classFlow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classFlow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classFlow_a325d284a50ca3274b126b21f5c39b9af}{$\sim$\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classFlow}{Flow}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_abed630b7b57e0eb7c5a360a55a0a5974}{connection}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$source=nullptr, \mbox{\hyperlink{classStock}{Stock}} $\ast$destiny=nullptr)=0
+\begin{DoxyCompactList}\small\item\em Make the connection of two Stocks. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_a00133c285e4c34b7cdda8aa42b92261f}{set\+Function}} (double($\ast$f)(\mbox{\hyperlink{classStock}{Stock}} $\ast$sto)=nullptr)=0
+\begin{DoxyCompactList}\small\item\em Set the Function object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classFlow_a41d7b22923bf21c10d94ef72291d103d}{get\+Source}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Source object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_a61ff0fb1e9d9b6816518d5a83df6124b}{set\+Source}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$source)=0
+\begin{DoxyCompactList}\small\item\em Set the Source object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classFlow_afac31ee2bab218a01fddc2755b98f532}{get\+Destiny}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Destiny object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_a88f2d79c9255d00dcd4d3a3aeb78b265}{set\+Destiny}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$destiny)=0
+\begin{DoxyCompactList}\small\item\em Set the Destiny object. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classFlow_aa3671632b52cdf4b3e30ce5921f4dc74}{get\+Last\+Value}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Last Value object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_a9335b9656dc3d3875378e79d361f6b0c}{set\+Last\+Value}} (double last\+Value)=0
+\begin{DoxyCompactList}\small\item\em Set the Last Value object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classFlow_ac69358e6b5c35ef74a79d3164fff9024}{get\+Id}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Id object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_ac0b26dd6bd4ee59c88f417766af67bf0}{set\+Id}} (int id)=0
+\begin{DoxyCompactList}\small\item\em Set the Id object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_a98e7aafb65699a9645a22f215b49c8b0}{clear\+Source}} ()=0
+\begin{DoxyCompactList}\small\item\em Desconnects the source \mbox{\hyperlink{classStock}{Stock}} from the \mbox{\hyperlink{classFlow}{Flow}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_afdd72b49ebdf7fed02ec61c0b6845227}{clear\+Destiny}} ()=0
+\begin{DoxyCompactList}\small\item\em Desconnects the destiny \mbox{\hyperlink{classStock}{Stock}} from the \mbox{\hyperlink{classFlow}{Flow}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classFlow_ae3dd3e476393b7f3d0a511091ae7ded3}{get\+Var\+Bool}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Var Bool object, which identifies which \mbox{\hyperlink{classStock}{Stock}} (source or destiny) value will be used to execute the function of the \mbox{\hyperlink{classFlow}{Flow}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_a5b587b8838b506db767401b1a5fa287f}{set\+Var\+Bool}} (bool var\+Bool)=0
+\begin{DoxyCompactList}\small\item\em Set the Var Bool object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFlow_a04367d0825863615101955f1d3f2c346}{execute}} ()=0
+\begin{DoxyCompactList}\small\item\em Executes the function passed by the Constructor and save the value of this function in the variable last\+Value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classFlow}{Flow}} Interface\+: Class responsable to make a \mbox{\hyperlink{classFlow}{Flow}} which is going to pass by it a certain value decided by a function. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFlow_a325d284a50ca3274b126b21f5c39b9af}\label{classFlow_a325d284a50ca3274b126b21f5c39b9af}} 
+\index{Flow@{Flow}!````~Flow@{$\sim$Flow}}
+\index{````~Flow@{$\sim$Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{$\sim$Flow()}{~Flow()}}
+{\footnotesize\ttfamily virtual Flow\+::$\sim$\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{classFlow}{Flow}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFlow_afdd72b49ebdf7fed02ec61c0b6845227}\label{classFlow_afdd72b49ebdf7fed02ec61c0b6845227}} 
+\index{Flow@{Flow}!clearDestiny@{clearDestiny}}
+\index{clearDestiny@{clearDestiny}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{clearDestiny()}{clearDestiny()}}
+{\footnotesize\ttfamily virtual void Flow\+::clear\+Destiny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Desconnects the destiny \mbox{\hyperlink{classStock}{Stock}} from the \mbox{\hyperlink{classFlow}{Flow}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a641baca7c8e0c8a17aee35354e985ee7}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a98e7aafb65699a9645a22f215b49c8b0}\label{classFlow_a98e7aafb65699a9645a22f215b49c8b0}} 
+\index{Flow@{Flow}!clearSource@{clearSource}}
+\index{clearSource@{clearSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{clearSource()}{clearSource()}}
+{\footnotesize\ttfamily virtual void Flow\+::clear\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Desconnects the source \mbox{\hyperlink{classStock}{Stock}} from the \mbox{\hyperlink{classFlow}{Flow}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_af9c7145cfe3e7c37b4863ac0f4c7e7b9}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_abed630b7b57e0eb7c5a360a55a0a5974}\label{classFlow_abed630b7b57e0eb7c5a360a55a0a5974}} 
+\index{Flow@{Flow}!connection@{connection}}
+\index{connection@{connection}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+{\footnotesize\ttfamily virtual void Flow\+::connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{source = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{destiny = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Make the connection of two Stocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & -\/ Where the flow is coming from \\
+\hline
+{\em destiny} & -\/ Where the flow is arriving \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a48c0ff68dde2696d3f47d34e7c6b12bc}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a04367d0825863615101955f1d3f2c346}\label{classFlow_a04367d0825863615101955f1d3f2c346}} 
+\index{Flow@{Flow}!execute@{execute}}
+\index{execute@{execute}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void Flow\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executes the function passed by the Constructor and save the value of this function in the variable last\+Value. 
+
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a0b83987fa66ee9ca87db87e2c6ea1aca}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_afac31ee2bab218a01fddc2755b98f532}\label{classFlow_afac31ee2bab218a01fddc2755b98f532}} 
+\index{Flow@{Flow}!getDestiny@{getDestiny}}
+\index{getDestiny@{getDestiny}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getDestiny()}{getDestiny()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classStock}{Stock}} $\ast$ Flow\+::get\+Destiny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Destiny object. 
+
+\begin{DoxyReturn}{Returns}
+Stock$\ast$ returned the Destiny of the \mbox{\hyperlink{classFlow}{Flow}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_ae7db6c3afb4a405f6fdcac849fd949e0}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_ac69358e6b5c35ef74a79d3164fff9024}\label{classFlow_ac69358e6b5c35ef74a79d3164fff9024}} 
+\index{Flow@{Flow}!getId@{getId}}
+\index{getId@{getId}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily virtual int Flow\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Id object. 
+
+\begin{DoxyReturn}{Returns}
+int returned the ID of the \mbox{\hyperlink{classFlow}{Flow}}, which identifies it 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a5e6317ed1dfc3fdfd60c19611073468c}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_aa3671632b52cdf4b3e30ce5921f4dc74}\label{classFlow_aa3671632b52cdf4b3e30ce5921f4dc74}} 
+\index{Flow@{Flow}!getLastValue@{getLastValue}}
+\index{getLastValue@{getLastValue}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getLastValue()}{getLastValue()}}
+{\footnotesize\ttfamily virtual double Flow\+::get\+Last\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Last Value object. 
+
+\begin{DoxyReturn}{Returns}
+double returned the last value of the executed function 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_ad6a06fdd88b0a421dbfdfe3276627cda}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a41d7b22923bf21c10d94ef72291d103d}\label{classFlow_a41d7b22923bf21c10d94ef72291d103d}} 
+\index{Flow@{Flow}!getSource@{getSource}}
+\index{getSource@{getSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classStock}{Stock}} $\ast$ Flow\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Source object. 
+
+\begin{DoxyReturn}{Returns}
+Stock$\ast$ returned the Source of the \mbox{\hyperlink{classFlow}{Flow}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_adde95faf6f6a582c5a379840715d0ff1}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_ae3dd3e476393b7f3d0a511091ae7ded3}\label{classFlow_ae3dd3e476393b7f3d0a511091ae7ded3}} 
+\index{Flow@{Flow}!getVarBool@{getVarBool}}
+\index{getVarBool@{getVarBool}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getVarBool()}{getVarBool()}}
+{\footnotesize\ttfamily virtual bool Flow\+::get\+Var\+Bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Var Bool object, which identifies which \mbox{\hyperlink{classStock}{Stock}} (source or destiny) value will be used to execute the function of the \mbox{\hyperlink{classFlow}{Flow}}. 
+
+\begin{DoxyReturn}{Returns}
+true if it\textquotesingle{}s going to use source 
+
+false if it\textquotesingle{}s going to use destiny 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_ac1caaab8503cd3156777ee92b2f7f230}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a88f2d79c9255d00dcd4d3a3aeb78b265}\label{classFlow_a88f2d79c9255d00dcd4d3a3aeb78b265}} 
+\index{Flow@{Flow}!setDestiny@{setDestiny}}
+\index{setDestiny@{setDestiny}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setDestiny()}{setDestiny()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Destiny (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{destiny }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Destiny object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destiny} & -\/ New Destiny for the \mbox{\hyperlink{classFlow}{Flow}} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a5b46c5bd1ed3bf155d304cd6cfb969fd}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a00133c285e4c34b7cdda8aa42b92261f}\label{classFlow_a00133c285e4c34b7cdda8aa42b92261f}} 
+\index{Flow@{Flow}!setFunction@{setFunction}}
+\index{setFunction@{setFunction}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setFunction()}{setFunction()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Function (\begin{DoxyParamCaption}\item[{double($\ast$)(\mbox{\hyperlink{classStock}{Stock}} $\ast$sto)}]{f = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Function object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & -\/ function that will be execute with this \mbox{\hyperlink{classFlow}{Flow}} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a4dcf8ed8a392284bd23fe8abbcb30f79}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_ac0b26dd6bd4ee59c88f417766af67bf0}\label{classFlow_ac0b26dd6bd4ee59c88f417766af67bf0}} 
+\index{Flow@{Flow}!setId@{setId}}
+\index{setId@{setId}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Id object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ New ID to identifies the \mbox{\hyperlink{classFlow}{Flow}} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_abe9ed5ccff219bed1ce8890eb16cb73e}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a9335b9656dc3d3875378e79d361f6b0c}\label{classFlow_a9335b9656dc3d3875378e79d361f6b0c}} 
+\index{Flow@{Flow}!setLastValue@{setLastValue}}
+\index{setLastValue@{setLastValue}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setLastValue()}{setLastValue()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Last\+Value (\begin{DoxyParamCaption}\item[{double}]{last\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Last Value object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em last\+Value} & -\/ New last\+Value when execute the function for the \mbox{\hyperlink{classFlow}{Flow}} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a7af4474081c5af6572476483767bea77}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a61ff0fb1e9d9b6816518d5a83df6124b}\label{classFlow_a61ff0fb1e9d9b6816518d5a83df6124b}} 
+\index{Flow@{Flow}!setSource@{setSource}}
+\index{setSource@{setSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Source object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & -\/ New Source for the \mbox{\hyperlink{classFlow}{Flow}} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_a1d639e5fe8bdebc91403e0f435a5d18b}{Flow\+Handle}}.
+
+\mbox{\Hypertarget{classFlow_a5b587b8838b506db767401b1a5fa287f}\label{classFlow_a5b587b8838b506db767401b1a5fa287f}} 
+\index{Flow@{Flow}!setVarBool@{setVarBool}}
+\index{setVarBool@{setVarBool}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setVarBool()}{setVarBool()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Var\+Bool (\begin{DoxyParamCaption}\item[{bool}]{var\+Bool }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Var Bool object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var\+Bool} & -\/ New bool variable to know who is going to be used in the function \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classFlowHandle_ae95ceb8335c5f1084f671f27eff6d08f}{Flow\+Handle}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/gabri/\+One\+Drive/\+Documentos/\+Git\+Hub/\+Faculdade/4º Período/\+Engenharia de Software 1/\+TP1/\+Sprint6/\+My\+Vensim/src/\mbox{\hyperlink{flow_8h}{flow.\+h}}\end{DoxyCompactItemize}

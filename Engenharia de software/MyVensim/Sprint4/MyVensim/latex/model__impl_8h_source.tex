@@ -1,0 +1,84 @@
+\hypertarget{model__impl_8h_source}{}\doxysection{model\+\_\+impl.\+h}
+\label{model__impl_8h_source}\index{/mnt/c/Users/gabri/OneDrive/Documentos/GitHub/Faculdade/4º Período/Engenharia de Software 1/TP1/Sprint4/MyVensim/src/model\_impl.h@{/mnt/c/Users/gabri/OneDrive/Documentos/GitHub/Faculdade/4º Período/Engenharia de Software 1/TP1/Sprint4/MyVensim/src/model\_impl.h}}
+\mbox{\hyperlink{model__impl_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MODEL\_IMPL\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MODEL\_IMPL\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{model_8h}{model.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{stock_8h}{stock.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{flow_8h}{flow.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{classMyModel}{MyModel}} : \textcolor{keyword}{public} \mbox{\hyperlink{classModel}{Model}}\{}
+\DoxyCodeLine{21 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{27     vector <Stock*> \mbox{\hyperlink{classMyModel_a29cee559e7a211d22e06b14f5e3ec0c3}{stocks}};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{33     vector <Flow*> \mbox{\hyperlink{classMyModel_a5a7df79e0640e66f33041afbbc92c864}{flows}};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{double} \mbox{\hyperlink{classMyModel_adebfe707d3c04db2df847a26ceb3de87}{currentTime}};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{double} \mbox{\hyperlink{classMyModel_a6862936f115137eef92c704709058ea1}{initialTime}};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{double} \mbox{\hyperlink{classMyModel_ab85fef0c4d94c70fb9e41396b7d71f30}{finalTime}};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{int} \mbox{\hyperlink{classMyModel_ad4a61965e43c1402e025b024c631fee3}{ID}};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{keyword}{private}:}
+\DoxyCodeLine{60     \mbox{\hyperlink{classMyModel}{MyModel}}(\textcolor{keyword}{const} \mbox{\hyperlink{classModel}{Model}}\&);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \mbox{\hyperlink{classModel}{Model}}\& operator= (\textcolor{keyword}{const} \mbox{\hyperlink{classModel}{Model}}\&);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{public}:}
+\DoxyCodeLine{65     \textcolor{comment}{// Model();}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{71     \mbox{\hyperlink{classMyModel}{MyModel}}(\textcolor{keywordtype}{double} = 0, \textcolor{keywordtype}{double} = 100, \textcolor{keywordtype}{int} = 0);}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{77     \textcolor{keyword}{virtual} \mbox{\hyperlink{classMyModel_ade26a303692a5fa46a742c8d6e88ba4a}{\string~MyModel}}(); }
+\DoxyCodeLine{78 }
+\DoxyCodeLine{84     \textcolor{keywordtype}{double} \mbox{\hyperlink{classMyModel_aefcb874f04189e5f13fed5356c489e51}{getCurrentTime}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMyModel_acf731ae137809f8862c69b0f853b468e}{setCurrentTime}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{classMyModel_adebfe707d3c04db2df847a26ceb3de87}{currentTime}});}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{98     \textcolor{keywordtype}{double} \mbox{\hyperlink{classMyModel_a38617898b8b7bf2af63be14000d49ade}{getInitialTime}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{105     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMyModel_a69af42a9def68cd7100028241c56a310}{setInitialTime}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{classMyModel_a6862936f115137eef92c704709058ea1}{initialTime}});}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{112     \textcolor{keywordtype}{double} \mbox{\hyperlink{classMyModel_a225563310cd7e2bf53f7bfd050132793}{getFinalTime}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{119     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMyModel_a0dd0087dcfb26b652625a1401057a4f6}{setFinalTime}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{classMyModel_ab85fef0c4d94c70fb9e41396b7d71f30}{finalTime}});}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{126     \textcolor{keywordtype}{int} \mbox{\hyperlink{classMyModel_af05145cb4a08f100841c67c57a217dcd}{getId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{133     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMyModel_a75ec229747d3ac1cad5e57c05833ca7c}{setId}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{140     vector <Stock*> \mbox{\hyperlink{classMyModel_a8dbbc9e389c51229ce06f3b9611c2a4b}{getStocks}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{147     vector <Flow*> \mbox{\hyperlink{classMyModel_a70fb532092958c1931f54d22944da4ed}{getFlows}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{154     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMyModel_ac2c824525757e4a0dffdf6837251a917}{add}}(\mbox{\hyperlink{classStock}{Stock}}* sto);}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{161     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMyModel_ac2c824525757e4a0dffdf6837251a917}{add}}(\mbox{\hyperlink{classFlow}{Flow}}* flu);}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{170     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMyModel_ac2c824525757e4a0dffdf6837251a917}{add}}(\mbox{\hyperlink{classFlow}{Flow}}* flu, \mbox{\hyperlink{classStock}{Stock}}* source, \mbox{\hyperlink{classStock}{Stock}}* destiny);}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{180     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classMyModel_a295989186924e0a9534b2a7f6598cb27}{remove}}(\textcolor{keywordtype}{string} idStock);}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{190     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classMyModel_a295989186924e0a9534b2a7f6598cb27}{remove}}(\textcolor{keywordtype}{int} idFlow);}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{199     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classMyModel_a3eb49c5080c5d7179c4dbd62f6c53b9b}{run}}();}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{205     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMyModel_a46afb6758dc9e0ba18c5e05523fceb53}{print\_results}}();}
+\DoxyCodeLine{206 \};}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208 }
+\DoxyCodeLine{209 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

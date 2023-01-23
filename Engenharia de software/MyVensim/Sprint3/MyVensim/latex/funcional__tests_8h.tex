@@ -1,0 +1,80 @@
+\hypertarget{funcional__tests_8h}{}\doxysection{/mnt/c/\+Users/gabri/\+One\+Drive/\+Documentos/\+Git\+Hub/\+Faculdade/4º Período/\+Engenharia de Software 1/\+TP1/\+Sprint3/\+My\+Vensim/test/funcional/funcional\+\_\+tests.h File Reference}
+\label{funcional__tests_8h}\index{/mnt/c/Users/gabri/OneDrive/Documentos/GitHub/Faculdade/4º Período/Engenharia de Software 1/TP1/Sprint3/MyVensim/test/funcional/funcional\_tests.h@{/mnt/c/Users/gabri/OneDrive/Documentos/GitHub/Faculdade/4º Período/Engenharia de Software 1/TP1/Sprint3/MyVensim/test/funcional/funcional\_tests.h}}
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include \char`\"{}../../src/model.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../src/stock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../src/flow.\+h\char`\"{}}\newline
+Include dependency graph for funcional\+\_\+tests.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funcional__tests_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{funcional__tests_8h_a990a580e1a43e5934dd62de8e0a37f30}{exponential\+Funcional\+Test}} ()
+\begin{DoxyCompactList}\small\item\em test if the exponential function is working with the \mbox{\hyperlink{classStock}{Stock}}, \mbox{\hyperlink{classFlow}{Flow}} and \mbox{\hyperlink{classModel}{Model}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funcional__tests_8h_ac9df0129352dd52de9dc7d0fc69660fe}{logistical\+Funcional\+Test}} ()
+\begin{DoxyCompactList}\small\item\em test if the logistical function is working with the \mbox{\hyperlink{classStock}{Stock}}, \mbox{\hyperlink{classFlow}{Flow}} and \mbox{\hyperlink{classModel}{Model}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funcional__tests_8h_a4b249a0069fb8bd98260fbe4d47f4e0b}{complex\+Funcional\+Test}} ()
+\begin{DoxyCompactList}\small\item\em test a complex \mbox{\hyperlink{classModel}{Model}} with more than 2 Stocks and Flows that are interconnected \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{funcional__tests_8h_a4b249a0069fb8bd98260fbe4d47f4e0b}\label{funcional__tests_8h_a4b249a0069fb8bd98260fbe4d47f4e0b}} 
+\index{funcional\_tests.h@{funcional\_tests.h}!complexFuncionalTest@{complexFuncionalTest}}
+\index{complexFuncionalTest@{complexFuncionalTest}!funcional\_tests.h@{funcional\_tests.h}}
+\doxysubsubsection{\texorpdfstring{complexFuncionalTest()}{complexFuncionalTest()}}
+{\footnotesize\ttfamily bool complex\+Funcional\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+test a complex \mbox{\hyperlink{classModel}{Model}} with more than 2 Stocks and Flows that are interconnected 
+
+\begin{DoxyReturn}{Returns}
+true if it passed the functional test of the complex \mbox{\hyperlink{classModel}{Model}} 
+
+false if it isn´t passed the functional test of the complex \mbox{\hyperlink{classModel}{Model}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcional__tests_8h_a990a580e1a43e5934dd62de8e0a37f30}\label{funcional__tests_8h_a990a580e1a43e5934dd62de8e0a37f30}} 
+\index{funcional\_tests.h@{funcional\_tests.h}!exponentialFuncionalTest@{exponentialFuncionalTest}}
+\index{exponentialFuncionalTest@{exponentialFuncionalTest}!funcional\_tests.h@{funcional\_tests.h}}
+\doxysubsubsection{\texorpdfstring{exponentialFuncionalTest()}{exponentialFuncionalTest()}}
+{\footnotesize\ttfamily bool exponential\+Funcional\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+test if the exponential function is working with the \mbox{\hyperlink{classStock}{Stock}}, \mbox{\hyperlink{classFlow}{Flow}} and \mbox{\hyperlink{classModel}{Model}} 
+
+\begin{DoxyReturn}{Returns}
+true if it passed the functional test of the exponential function 
+
+false if it isn´t passed the functional test of the exponential function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcional__tests_8h_ac9df0129352dd52de9dc7d0fc69660fe}\label{funcional__tests_8h_ac9df0129352dd52de9dc7d0fc69660fe}} 
+\index{funcional\_tests.h@{funcional\_tests.h}!logisticalFuncionalTest@{logisticalFuncionalTest}}
+\index{logisticalFuncionalTest@{logisticalFuncionalTest}!funcional\_tests.h@{funcional\_tests.h}}
+\doxysubsubsection{\texorpdfstring{logisticalFuncionalTest()}{logisticalFuncionalTest()}}
+{\footnotesize\ttfamily bool logistical\+Funcional\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+test if the logistical function is working with the \mbox{\hyperlink{classStock}{Stock}}, \mbox{\hyperlink{classFlow}{Flow}} and \mbox{\hyperlink{classModel}{Model}} 
+
+\begin{DoxyReturn}{Returns}
+true if it passed the functional test of the logistical function 
+
+false if it isn´t passed the functional test of the logistical function 
+\end{DoxyReturn}

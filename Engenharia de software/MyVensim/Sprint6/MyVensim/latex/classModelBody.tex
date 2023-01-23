@@ -1,0 +1,488 @@
+\hypertarget{classModelBody}{}\doxysection{Model\+Body Class Reference}
+\label{classModelBody}\index{ModelBody@{ModelBody}}
+
+
+Class responsible for making a \mbox{\hyperlink{classModel}{Model}} with all the Inventories and Flows created by the user and executing in each of the Flows its functions that will pass values ​​between the Stocks.  
+
+
+
+
+{\ttfamily \#include $<$model\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for Model\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classModelBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Model\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classModelBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classModelBody_aa9f3fb32b42e19d4c61c2ec8b7cfc350}{add}} (\mbox{\hyperlink{classModel}{Model}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Adds a model to the factory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelBody_a45415c14ae3b9f8cbfc2f21a8b1a1263}{add}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$sto)
+\begin{DoxyCompactList}\small\item\em Adds only a \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classModel}{Model}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelBody_ac4ce2f19ec762a6e2fa06d053dc0c158}{add}} (\mbox{\hyperlink{classFlow}{Flow}} $\ast$flu)
+\begin{DoxyCompactList}\small\item\em Adds only a \mbox{\hyperlink{classFlow}{Flow}} to the \mbox{\hyperlink{classModel}{Model}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelBody_a81c04ff96f41b02887841bff212d650b}{add}} (\mbox{\hyperlink{classFlow}{Flow}} $\ast$flu, \mbox{\hyperlink{classStock}{Stock}} $\ast$source, \mbox{\hyperlink{classStock}{Stock}} $\ast$destiny)
+\begin{DoxyCompactList}\small\item\em Adds a \mbox{\hyperlink{classFlow}{Flow}} and its two Stocks to the \mbox{\hyperlink{classModel}{Model}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classModelBody_a6063bddda2422802c33f7061c1b91087}{Model\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classModel}{Model}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classModelBody_a61bb091ef404a3615bace348e2071809}{$\sim$\+Model\+Body}} ()
+\item 
+\mbox{\hyperlink{classStock}{Stock}} $\ast$ \mbox{\hyperlink{classModelBody_a89567d9882e4bed7a09c4545022e69e0}{create\+Stock}} (double value, string id)
+\item 
+\mbox{\hyperlink{classFlow}{Flow}} $\ast$ \mbox{\hyperlink{classModelBody_a2921a881cdd75693e4c66cd7e62f9b28}{create\+Flow}} (\mbox{\hyperlink{classStock}{Stock}} $\ast$source, \mbox{\hyperlink{classStock}{Stock}} $\ast$destiny, int id, double($\ast$f)(\mbox{\hyperlink{classStock}{Stock}} $\ast$sto), bool var\+Bool)
+\item 
+double \mbox{\hyperlink{classModelBody_af051c313c203b9e4bde32ecaecfb450e}{get\+Current\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Get the Current Time object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelBody_ab3635dfa87b6900074f5d58344ae10c4}{set\+Current\+Time}} (double \mbox{\hyperlink{classModelBody_ab871c2cd0abacd3eadbdea3360dc74aa}{current\+Time}})
+\begin{DoxyCompactList}\small\item\em Set the Current Time object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classModelBody_a5cd452b92a59c1ad34b837a667f9edfa}{get\+Initial\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Get the Initial Time object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelBody_aadb9bfe114079f69e03bb088b292ed79}{set\+Initial\+Time}} (double \mbox{\hyperlink{classModelBody_a052c77bebe8ed31c07649eb37bac4aa4}{initial\+Time}})
+\begin{DoxyCompactList}\small\item\em Set the Initial Time object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classModelBody_a3d846df2309f9f49c62b858e472fc7cc}{get\+Final\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Get the Final Time object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelBody_ae5a7038bf77519e7710be4fe63436bb5}{set\+Final\+Time}} (double \mbox{\hyperlink{classModelBody_ab45af1cd03d1787b9a1275f55c24843e}{final\+Time}})
+\begin{DoxyCompactList}\small\item\em Set the Final Time object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classModelBody_a8310ec3d2900b966ac351ac64fc0d8a5}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get the Id object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelBody_a93c8f6de997fa248ce5d223fcc753355}{set\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Set the Id object. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classStock}{Stock}} $\ast$ $>$ \mbox{\hyperlink{classModelBody_a062cc0ace41bdbb0ca252768b84f4ade}{get\+Stocks}} () const
+\begin{DoxyCompactList}\small\item\em Get the Stocks object. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classFlow}{Flow}} $\ast$ $>$ \mbox{\hyperlink{classModelBody_aaec7030d263a48a2c20492fd77d981f4}{get\+Flows}} () const
+\begin{DoxyCompactList}\small\item\em Get the Flows object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelBody_afab5a681f064e8ad3636ab5158e2b412}{remove}} (string id\+Stock)
+\begin{DoxyCompactList}\small\item\em Removes a \mbox{\hyperlink{classStock}{Stock}} from the \mbox{\hyperlink{classModel}{Model}} by it ID (name) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelBody_ac3e33dd8d519531c8158ef6a77401e7e}{remove}} (int id\+Flow)
+\begin{DoxyCompactList}\small\item\em Removes a \mbox{\hyperlink{classFlow}{Flow}} from the \mbox{\hyperlink{classModel}{Model}} by it ID (number) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModelBody_a2e5a142e98d9b2b794d8b934a894b868}{run}} ()
+\begin{DoxyCompactList}\small\item\em Runs all the functions of the Flows in a certain period of time and stores the value of each execution in each source and destiny. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModelBody_af2f5a189a0d84976312f65ebf73b920f}{print\+\_\+results}} ()
+\begin{DoxyCompactList}\small\item\em prints the value of each \mbox{\hyperlink{classStock}{Stock}} with it ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classModel}{Model}} $\ast$ \mbox{\hyperlink{classModelBody_a4234a82a24a54a094df718153a53db04}{create\+Model}} (double \mbox{\hyperlink{classModelBody_a052c77bebe8ed31c07649eb37bac4aa4}{initial\+Time}}, double \mbox{\hyperlink{classModelBody_ab45af1cd03d1787b9a1275f55c24843e}{final\+Time}}, int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ \mbox{\hyperlink{classModel}{Model}} $\ast$ $>$ \mbox{\hyperlink{classModelBody_ac7520681b552ec8ea86dc899b61d8b71}{models}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{classStock}{Stock}} $\ast$ $>$ \mbox{\hyperlink{classModelBody_aafd29cf6decaab4951c0addf824e3d1f}{stocks}}
+\begin{DoxyCompactList}\small\item\em vector which store all the Stocks added in the \mbox{\hyperlink{classModel}{Model}} \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classFlow}{Flow}} $\ast$ $>$ \mbox{\hyperlink{classModelBody_a275a4efed4bca08a5d995c6d532d4c41}{flows}}
+\begin{DoxyCompactList}\small\item\em vector which store all the Flows added in the \mbox{\hyperlink{classModel}{Model}} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classModelBody_ab871c2cd0abacd3eadbdea3360dc74aa}{current\+Time}}
+\begin{DoxyCompactList}\small\item\em the current time when running the \mbox{\hyperlink{classModel}{Model}} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classModelBody_a052c77bebe8ed31c07649eb37bac4aa4}{initial\+Time}}
+\begin{DoxyCompactList}\small\item\em when the model is going to start to run \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classModelBody_ab45af1cd03d1787b9a1275f55c24843e}{final\+Time}}
+\begin{DoxyCompactList}\small\item\em when the model finalizes the execution \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classModelBody_a99e8cc0eff54d3dfa8e6d29741512a0c}{ID}}
+\begin{DoxyCompactList}\small\item\em the ID/name which identifies the \mbox{\hyperlink{classModel}{Model}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for making a \mbox{\hyperlink{classModel}{Model}} with all the Inventories and Flows created by the user and executing in each of the Flows its functions that will pass values ​​between the Stocks. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModelBody_a6063bddda2422802c33f7061c1b91087}\label{classModelBody_a6063bddda2422802c33f7061c1b91087}} 
+\index{ModelBody@{ModelBody}!ModelBody@{ModelBody}}
+\index{ModelBody@{ModelBody}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{ModelBody()}{ModelBody()}}
+{\footnotesize\ttfamily Model\+Body\+::\+Model\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classModel}{Model}} object. 
+
+Destroy the \mbox{\hyperlink{classModel}{Model}} object \mbox{\Hypertarget{classModelBody_a61bb091ef404a3615bace348e2071809}\label{classModelBody_a61bb091ef404a3615bace348e2071809}} 
+\index{ModelBody@{ModelBody}!````~ModelBody@{$\sim$ModelBody}}
+\index{````~ModelBody@{$\sim$ModelBody}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$ModelBody()}{~ModelBody()}}
+{\footnotesize\ttfamily Model\+Body\+::$\sim$\+Model\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classModelBody_ac4ce2f19ec762a6e2fa06d053dc0c158}\label{classModelBody_ac4ce2f19ec762a6e2fa06d053dc0c158}} 
+\index{ModelBody@{ModelBody}!add@{add}}
+\index{add@{add}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Model\+Body\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} $\ast$}]{flu }\end{DoxyParamCaption})}
+
+
+
+Adds only a \mbox{\hyperlink{classFlow}{Flow}} to the \mbox{\hyperlink{classModel}{Model}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flu} & -\/ New \mbox{\hyperlink{classFlow}{Flow}} to the \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classModelBody_a81c04ff96f41b02887841bff212d650b}\label{classModelBody_a81c04ff96f41b02887841bff212d650b}} 
+\index{ModelBody@{ModelBody}!add@{add}}
+\index{add@{add}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Model\+Body\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFlow}{Flow}} $\ast$}]{flu,  }\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{source,  }\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{destiny }\end{DoxyParamCaption})}
+
+
+
+Adds a \mbox{\hyperlink{classFlow}{Flow}} and its two Stocks to the \mbox{\hyperlink{classModel}{Model}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flu} & -\/ New \mbox{\hyperlink{classFlow}{Flow}} to the \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+{\em source} & -\/ New \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classModel}{Model}} (source of the \mbox{\hyperlink{classFlow}{Flow}} added) \\
+\hline
+{\em destiny} & -\/ New \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classModel}{Model}} (destiny of the \mbox{\hyperlink{classFlow}{Flow}} added) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classModelBody_aa9f3fb32b42e19d4c61c2ec8b7cfc350}\label{classModelBody_aa9f3fb32b42e19d4c61c2ec8b7cfc350}} 
+\index{ModelBody@{ModelBody}!add@{add}}
+\index{add@{add}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Model\+Body\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classModel}{Model}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Adds a model to the factory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ New \mbox{\hyperlink{classModel}{Model}} to the factory \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classModelBody_a45415c14ae3b9f8cbfc2f21a8b1a1263}\label{classModelBody_a45415c14ae3b9f8cbfc2f21a8b1a1263}} 
+\index{ModelBody@{ModelBody}!add@{add}}
+\index{add@{add}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Model\+Body\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{sto }\end{DoxyParamCaption})}
+
+
+
+Adds only a \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classModel}{Model}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sto} & -\/ New \mbox{\hyperlink{classStock}{Stock}} to the \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classModelBody_a2921a881cdd75693e4c66cd7e62f9b28}\label{classModelBody_a2921a881cdd75693e4c66cd7e62f9b28}} 
+\index{ModelBody@{ModelBody}!createFlow@{createFlow}}
+\index{createFlow@{createFlow}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{createFlow()}{createFlow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlow}{Flow}} $\ast$ Model\+Body\+::create\+Flow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{source,  }\item[{\mbox{\hyperlink{classStock}{Stock}} $\ast$}]{destiny,  }\item[{int}]{id,  }\item[{double($\ast$)(\mbox{\hyperlink{classStock}{Stock}} $\ast$sto)}]{f,  }\item[{bool}]{var\+Bool }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classModelBody_a4234a82a24a54a094df718153a53db04}\label{classModelBody_a4234a82a24a54a094df718153a53db04}} 
+\index{ModelBody@{ModelBody}!createModel@{createModel}}
+\index{createModel@{createModel}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classModel}{Model}} $\ast$ Model\+Body\+::create\+Model (\begin{DoxyParamCaption}\item[{double}]{initial\+Time,  }\item[{double}]{final\+Time,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classModelBody_a89567d9882e4bed7a09c4545022e69e0}\label{classModelBody_a89567d9882e4bed7a09c4545022e69e0}} 
+\index{ModelBody@{ModelBody}!createStock@{createStock}}
+\index{createStock@{createStock}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{createStock()}{createStock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStock}{Stock}} $\ast$ Model\+Body\+::create\+Stock (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{string}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classModelBody_af051c313c203b9e4bde32ecaecfb450e}\label{classModelBody_af051c313c203b9e4bde32ecaecfb450e}} 
+\index{ModelBody@{ModelBody}!getCurrentTime@{getCurrentTime}}
+\index{getCurrentTime@{getCurrentTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getCurrentTime()}{getCurrentTime()}}
+{\footnotesize\ttfamily double Model\+Body\+::get\+Current\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Current Time object. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModelBody_a3d846df2309f9f49c62b858e472fc7cc}\label{classModelBody_a3d846df2309f9f49c62b858e472fc7cc}} 
+\index{ModelBody@{ModelBody}!getFinalTime@{getFinalTime}}
+\index{getFinalTime@{getFinalTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getFinalTime()}{getFinalTime()}}
+{\footnotesize\ttfamily double Model\+Body\+::get\+Final\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Final Time object. 
+
+\begin{DoxyReturn}{Returns}
+double returned the Final time of the execution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModelBody_aaec7030d263a48a2c20492fd77d981f4}\label{classModelBody_aaec7030d263a48a2c20492fd77d981f4}} 
+\index{ModelBody@{ModelBody}!getFlows@{getFlows}}
+\index{getFlows@{getFlows}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getFlows()}{getFlows()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classFlow}{Flow}} $\ast$ $>$ Model\+Body\+::get\+Flows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Flows object. 
+
+\begin{DoxyReturn}{Returns}
+vector \texorpdfstring{$<$}{<}Flow$\ast$\texorpdfstring{$>$}{>} returned all the Flows added to the \mbox{\hyperlink{classModel}{Model}} ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModelBody_a8310ec3d2900b966ac351ac64fc0d8a5}\label{classModelBody_a8310ec3d2900b966ac351ac64fc0d8a5}} 
+\index{ModelBody@{ModelBody}!getId@{getId}}
+\index{getId@{getId}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Model\+Body\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Id object. 
+
+\begin{DoxyReturn}{Returns}
+int returned the ID of the \mbox{\hyperlink{classModel}{Model}}, which identifies it 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModelBody_a5cd452b92a59c1ad34b837a667f9edfa}\label{classModelBody_a5cd452b92a59c1ad34b837a667f9edfa}} 
+\index{ModelBody@{ModelBody}!getInitialTime@{getInitialTime}}
+\index{getInitialTime@{getInitialTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getInitialTime()}{getInitialTime()}}
+{\footnotesize\ttfamily double Model\+Body\+::get\+Initial\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Initial Time object. 
+
+\begin{DoxyReturn}{Returns}
+double returned the Initial time of the execution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModelBody_a062cc0ace41bdbb0ca252768b84f4ade}\label{classModelBody_a062cc0ace41bdbb0ca252768b84f4ade}} 
+\index{ModelBody@{ModelBody}!getStocks@{getStocks}}
+\index{getStocks@{getStocks}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getStocks()}{getStocks()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classStock}{Stock}} $\ast$ $>$ Model\+Body\+::get\+Stocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Stocks object. 
+
+\begin{DoxyReturn}{Returns}
+vector \texorpdfstring{$<$}{<}Stock$\ast$\texorpdfstring{$>$}{>} returned all the Stocks added to the \mbox{\hyperlink{classModel}{Model}} ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModelBody_af2f5a189a0d84976312f65ebf73b920f}\label{classModelBody_af2f5a189a0d84976312f65ebf73b920f}} 
+\index{ModelBody@{ModelBody}!print\_results@{print\_results}}
+\index{print\_results@{print\_results}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{print\_results()}{print\_results()}}
+{\footnotesize\ttfamily void Model\+Body\+::print\+\_\+results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints the value of each \mbox{\hyperlink{classStock}{Stock}} with it ID 
+
+\mbox{\Hypertarget{classModelBody_ac3e33dd8d519531c8158ef6a77401e7e}\label{classModelBody_ac3e33dd8d519531c8158ef6a77401e7e}} 
+\index{ModelBody@{ModelBody}!remove@{remove}}
+\index{remove@{remove}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Model\+Body\+::remove (\begin{DoxyParamCaption}\item[{int}]{id\+Flow }\end{DoxyParamCaption})}
+
+
+
+Removes a \mbox{\hyperlink{classFlow}{Flow}} from the \mbox{\hyperlink{classModel}{Model}} by it ID (number) 
+
+\begin{DoxyReturn}{Returns}
+true if the operation of removing the \mbox{\hyperlink{classFlow}{Flow}} it is sucessful 
+
+false if the operation of removing the \mbox{\hyperlink{classFlow}{Flow}} it isn\textquotesingle{}t successful
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Flow} & -\/ number of the \mbox{\hyperlink{classFlow}{Flow}} which is going to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classModelBody_afab5a681f064e8ad3636ab5158e2b412}\label{classModelBody_afab5a681f064e8ad3636ab5158e2b412}} 
+\index{ModelBody@{ModelBody}!remove@{remove}}
+\index{remove@{remove}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Model\+Body\+::remove (\begin{DoxyParamCaption}\item[{string}]{id\+Stock }\end{DoxyParamCaption})}
+
+
+
+Removes a \mbox{\hyperlink{classStock}{Stock}} from the \mbox{\hyperlink{classModel}{Model}} by it ID (name) 
+
+\begin{DoxyReturn}{Returns}
+true if the operation of removing the \mbox{\hyperlink{classStock}{Stock}} it is sucessful 
+
+false if the operation of removing the \mbox{\hyperlink{classStock}{Stock}} it isn\textquotesingle{}t successful
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Stock} & -\/ name of the \mbox{\hyperlink{classStock}{Stock}} which is going to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classModelBody_a2e5a142e98d9b2b794d8b934a894b868}\label{classModelBody_a2e5a142e98d9b2b794d8b934a894b868}} 
+\index{ModelBody@{ModelBody}!run@{run}}
+\index{run@{run}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool Model\+Body\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Runs all the functions of the Flows in a certain period of time and stores the value of each execution in each source and destiny. 
+
+\begin{DoxyReturn}{Returns}
+true if the execution of all Flows was successful 
+
+false if the execution of one of the Flows wasn´t successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModelBody_ab3635dfa87b6900074f5d58344ae10c4}\label{classModelBody_ab3635dfa87b6900074f5d58344ae10c4}} 
+\index{ModelBody@{ModelBody}!setCurrentTime@{setCurrentTime}}
+\index{setCurrentTime@{setCurrentTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{setCurrentTime()}{setCurrentTime()}}
+{\footnotesize\ttfamily void Model\+Body\+::set\+Current\+Time (\begin{DoxyParamCaption}\item[{double}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the Current Time object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & -\/ New current time in each execution of the model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classModelBody_ae5a7038bf77519e7710be4fe63436bb5}\label{classModelBody_ae5a7038bf77519e7710be4fe63436bb5}} 
+\index{ModelBody@{ModelBody}!setFinalTime@{setFinalTime}}
+\index{setFinalTime@{setFinalTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{setFinalTime()}{setFinalTime()}}
+{\footnotesize\ttfamily void Model\+Body\+::set\+Final\+Time (\begin{DoxyParamCaption}\item[{double}]{final\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the Final Time object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em final\+Time} & -\/ New final time of the period of the execution \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classModelBody_a93c8f6de997fa248ce5d223fcc753355}\label{classModelBody_a93c8f6de997fa248ce5d223fcc753355}} 
+\index{ModelBody@{ModelBody}!setId@{setId}}
+\index{setId@{setId}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void Model\+Body\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Set the Id object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ New ID to identifies the \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classModelBody_aadb9bfe114079f69e03bb088b292ed79}\label{classModelBody_aadb9bfe114079f69e03bb088b292ed79}} 
+\index{ModelBody@{ModelBody}!setInitialTime@{setInitialTime}}
+\index{setInitialTime@{setInitialTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{setInitialTime()}{setInitialTime()}}
+{\footnotesize\ttfamily void Model\+Body\+::set\+Initial\+Time (\begin{DoxyParamCaption}\item[{double}]{initial\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the Initial Time object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Time} & -\/ New initial time of the period of the execution \mbox{\hyperlink{classModel}{Model}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classModelBody_ab871c2cd0abacd3eadbdea3360dc74aa}\label{classModelBody_ab871c2cd0abacd3eadbdea3360dc74aa}} 
+\index{ModelBody@{ModelBody}!currentTime@{currentTime}}
+\index{currentTime@{currentTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{currentTime}{currentTime}}
+{\footnotesize\ttfamily double Model\+Body\+::current\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the current time when running the \mbox{\hyperlink{classModel}{Model}} 
+
+\mbox{\Hypertarget{classModelBody_ab45af1cd03d1787b9a1275f55c24843e}\label{classModelBody_ab45af1cd03d1787b9a1275f55c24843e}} 
+\index{ModelBody@{ModelBody}!finalTime@{finalTime}}
+\index{finalTime@{finalTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{finalTime}{finalTime}}
+{\footnotesize\ttfamily double Model\+Body\+::final\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+when the model finalizes the execution 
+
+\mbox{\Hypertarget{classModelBody_a275a4efed4bca08a5d995c6d532d4c41}\label{classModelBody_a275a4efed4bca08a5d995c6d532d4c41}} 
+\index{ModelBody@{ModelBody}!flows@{flows}}
+\index{flows@{flows}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classFlow}{Flow}}$\ast$$>$ Model\+Body\+::flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+vector which store all the Flows added in the \mbox{\hyperlink{classModel}{Model}} 
+
+\mbox{\Hypertarget{classModelBody_a99e8cc0eff54d3dfa8e6d29741512a0c}\label{classModelBody_a99e8cc0eff54d3dfa8e6d29741512a0c}} 
+\index{ModelBody@{ModelBody}!ID@{ID}}
+\index{ID@{ID}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily int Model\+Body\+::\+ID\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the ID/name which identifies the \mbox{\hyperlink{classModel}{Model}} 
+
+\mbox{\Hypertarget{classModelBody_a052c77bebe8ed31c07649eb37bac4aa4}\label{classModelBody_a052c77bebe8ed31c07649eb37bac4aa4}} 
+\index{ModelBody@{ModelBody}!initialTime@{initialTime}}
+\index{initialTime@{initialTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{initialTime}{initialTime}}
+{\footnotesize\ttfamily double Model\+Body\+::initial\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+when the model is going to start to run 
+
+\mbox{\Hypertarget{classModelBody_ac7520681b552ec8ea86dc899b61d8b71}\label{classModelBody_ac7520681b552ec8ea86dc899b61d8b71}} 
+\index{ModelBody@{ModelBody}!models@{models}}
+\index{models@{models}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{models}{models}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classModel}{Model}} $\ast$ $>$ Model\+Body\+::models\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classModelBody_aafd29cf6decaab4951c0addf824e3d1f}\label{classModelBody_aafd29cf6decaab4951c0addf824e3d1f}} 
+\index{ModelBody@{ModelBody}!stocks@{stocks}}
+\index{stocks@{stocks}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{stocks}{stocks}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classStock}{Stock}}$\ast$$>$ Model\+Body\+::stocks\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+vector which store all the Stocks added in the \mbox{\hyperlink{classModel}{Model}} 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/gabri/\+One\+Drive/\+Documentos/\+Git\+Hub/\+Faculdade/4º Período/\+Engenharia de Software 1/\+TP1/\+Sprint6/\+My\+Vensim/src/\mbox{\hyperlink{model__impl_8h}{model\+\_\+impl.\+h}}\item 
+/mnt/c/\+Users/gabri/\+One\+Drive/\+Documentos/\+Git\+Hub/\+Faculdade/4º Período/\+Engenharia de Software 1/\+TP1/\+Sprint6/\+My\+Vensim/src/\mbox{\hyperlink{model__impl_8cpp}{model\+\_\+impl.\+cpp}}\end{DoxyCompactItemize}

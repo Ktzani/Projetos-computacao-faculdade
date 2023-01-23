@@ -1,0 +1,143 @@
+\hypertarget{classStockHandle}{}\doxysection{Stock\+Handle Class Reference}
+\label{classStockHandle}\index{StockHandle@{StockHandle}}
+
+
+Class responsible for storing a certain value that will be used later to execute functions of the Flows and receive the result of these functions incremented or decremented from their values, depending on which function is being used and if it is a Source or Destination \mbox{\hyperlink{classStock}{Stock}}.  
+
+
+
+
+{\ttfamily \#include $<$stock\+\_\+impl.\+h$>$}
+
+
+
+Inheritance diagram for Stock\+Handle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classStockHandle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Stock\+Handle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classStockHandle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStockHandle_a05d27942f90edbd6cbd0f6ae6456c6ac}{Stock\+Handle}} (double value=0, const string id=\char`\"{}\char`\"{})
+\item 
+virtual \mbox{\hyperlink{classStockHandle_a8df120257fc7545856942e4762644e9f}{$\sim$\+Stock\+Handle}} ()
+\item 
+double \mbox{\hyperlink{classStockHandle_a0eb643edfefa69a9b7f5ca681c6c8789}{get\+Initial\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Get the Initial Value object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStockHandle_af113a37f73b82522d398f58c6855b513}{set\+Initial\+Value}} (double value)
+\begin{DoxyCompactList}\small\item\em Set the Initial Value object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classStockHandle_aef5d44ae2625cb2239074c1bc895a43d}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get the Id object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStockHandle_af382ded89cff3a323d54a0ea8b014b32}{set\+Id}} (string id)
+\begin{DoxyCompactList}\small\item\em Set the Id object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for storing a certain value that will be used later to execute functions of the Flows and receive the result of these functions incremented or decremented from their values, depending on which function is being used and if it is a Source or Destination \mbox{\hyperlink{classStock}{Stock}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStockHandle_a05d27942f90edbd6cbd0f6ae6456c6ac}\label{classStockHandle_a05d27942f90edbd6cbd0f6ae6456c6ac}} 
+\index{StockHandle@{StockHandle}!StockHandle@{StockHandle}}
+\index{StockHandle@{StockHandle}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{StockHandle()}{StockHandle()}}
+{\footnotesize\ttfamily Stock\+Handle\+::\+Stock\+Handle (\begin{DoxyParamCaption}\item[{double}]{value = {\ttfamily 0},  }\item[{const string}]{id = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStockHandle_a8df120257fc7545856942e4762644e9f}\label{classStockHandle_a8df120257fc7545856942e4762644e9f}} 
+\index{StockHandle@{StockHandle}!````~StockHandle@{$\sim$StockHandle}}
+\index{````~StockHandle@{$\sim$StockHandle}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{$\sim$StockHandle()}{~StockHandle()}}
+{\footnotesize\ttfamily virtual Stock\+Handle\+::$\sim$\+Stock\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStockHandle_aef5d44ae2625cb2239074c1bc895a43d}\label{classStockHandle_aef5d44ae2625cb2239074c1bc895a43d}} 
+\index{StockHandle@{StockHandle}!getId@{getId}}
+\index{getId@{getId}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily string Stock\+Handle\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Id object. 
+
+\begin{DoxyReturn}{Returns}
+string returned ID 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classStock_af2c2d19420ea00eb5635f334dd0ca333}{Stock}}.
+
+\mbox{\Hypertarget{classStockHandle_a0eb643edfefa69a9b7f5ca681c6c8789}\label{classStockHandle_a0eb643edfefa69a9b7f5ca681c6c8789}} 
+\index{StockHandle@{StockHandle}!getInitialValue@{getInitialValue}}
+\index{getInitialValue@{getInitialValue}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{getInitialValue()}{getInitialValue()}}
+{\footnotesize\ttfamily double Stock\+Handle\+::get\+Initial\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the Initial Value object. 
+
+\begin{DoxyReturn}{Returns}
+double returned value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classStock_af7172b4baf769bba960b948931ff65ea}{Stock}}.
+
+\mbox{\Hypertarget{classStockHandle_af382ded89cff3a323d54a0ea8b014b32}\label{classStockHandle_af382ded89cff3a323d54a0ea8b014b32}} 
+\index{StockHandle@{StockHandle}!setId@{setId}}
+\index{setId@{setId}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void Stock\+Handle\+::set\+Id (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Id object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & New ID for the \mbox{\hyperlink{classStock}{Stock}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classStock_a5a2eade43a45689c75ecc1fca1993e14}{Stock}}.
+
+\mbox{\Hypertarget{classStockHandle_af113a37f73b82522d398f58c6855b513}\label{classStockHandle_af113a37f73b82522d398f58c6855b513}} 
+\index{StockHandle@{StockHandle}!setInitialValue@{setInitialValue}}
+\index{setInitialValue@{setInitialValue}!StockHandle@{StockHandle}}
+\doxysubsubsection{\texorpdfstring{setInitialValue()}{setInitialValue()}}
+{\footnotesize\ttfamily void Stock\+Handle\+::set\+Initial\+Value (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Initial Value object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New initial Value for the \mbox{\hyperlink{classStock}{Stock}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classStock_ac7c98221c693f6cf950617fe48d29022}{Stock}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/gabri/\+One\+Drive/\+Documentos/\+Git\+Hub/\+Faculdade/4º Período/\+Engenharia de Software 1/\+TP1/\+Sprint6/\+My\+Vensim/src/\mbox{\hyperlink{stock__impl_8h}{stock\+\_\+impl.\+h}}\end{DoxyCompactItemize}
