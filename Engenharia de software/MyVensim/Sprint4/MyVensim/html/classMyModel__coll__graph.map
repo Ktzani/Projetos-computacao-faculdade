@@ -1,4 +1,0 @@
-<map id="MyModel" name="MyModel">
-<area shape="rect" id="node1" title="Class responsible for making a Model with all the Inventories and Flows created by the user and execu..." alt="" coords="5,277,155,575"/>
-<area shape="rect" id="node2" href="$classModel.html" title="Model Interface: Class responsible for making a Model with all the Inventories and Flows created by t..." alt="" coords="5,5,155,229"/>
-</map>

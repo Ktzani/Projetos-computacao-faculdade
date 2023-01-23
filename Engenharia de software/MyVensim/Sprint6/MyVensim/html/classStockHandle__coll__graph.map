@@ -1,7 +1,0 @@
-<map id="StockHandle" name="StockHandle">
-<area shape="rect" id="node1" title="Class responsible for storing a certain value that will be used later to execute functions of the Flo..." alt="" coords="21,589,163,740"/>
-<area shape="rect" id="node2" href="$classStock.html" title="Stock Interface: Class responsible for storing a certain value that will be used later to execute fun..." alt="" coords="5,404,147,540"/>
-<area shape="rect" id="node3" href="$classHandle.html" title=" " alt="" coords="171,411,338,533"/>
-<area shape="rect" id="node4" href="$classStockBody.html" title=" " alt="" coords="184,191,325,341"/>
-<area shape="rect" id="node5" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="203,5,306,141"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="FlowBody" name="FlowBody">
-<area shape="rect" id="node1" title="Class responsable to make a Flow which is going to pass by it a certain value decided by a function." alt="" coords="65,219,195,545"/>
-<area shape="rect" id="node2" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="5,5,108,141"/>
-<area shape="rect" id="node3" href="$classStock.html" title="Stock Interface: Class responsible for storing a certain value that will be used later to execute fun..." alt="" coords="133,5,274,141"/>
-</map>

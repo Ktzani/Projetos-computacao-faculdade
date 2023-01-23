@@ -1,6 +1,0 @@
-<map id="Body" name="Body">
-<area shape="rect" id="node1" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="183,5,286,141"/>
-<area shape="rect" id="node2" href="$classFlowBody.html" title="Class responsable to make a Flow which is going to pass by it a certain value decided by a function." alt="" coords="5,189,136,545"/>
-<area shape="rect" id="node3" href="$classModelBody.html" title="Class responsible for making a Model with all the Inventories and Flows created by the user and execu..." alt="" coords="160,204,309,531"/>
-<area shape="rect" id="node4" href="$classStockBody.html" title=" " alt="" coords="333,292,475,443"/>
-</map>

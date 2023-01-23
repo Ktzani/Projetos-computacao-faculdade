@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classHandle.html" title=" " alt="" coords="5,5,172,32"/>
-<area shape="rect" id="node2" href="$classStockHandle.html" title="Class responsible for storing a certain value that will be used later to execute functions of the Flo..." alt="" coords="220,31,324,57"/>
-<area shape="rect" id="node3" href="$classStock.html" title="Stock Interface: Class responsible for storing a certain value that will be used later to execute fun..." alt="" coords="59,56,118,83"/>
-</map>

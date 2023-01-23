@@ -1,7 +1,0 @@
-<map id="ModelHandle" name="ModelHandle">
-<area shape="rect" id="node1" title=" " alt="" coords="59,927,208,1151"/>
-<area shape="rect" id="node2" href="$classModel.html" title="Model Interface: Class responsible for making a Model with all the Inventories and Flows created by t..." alt="" coords="5,580,155,877"/>
-<area shape="rect" id="node3" href="$classHandle.html" title=" " alt="" coords="179,668,349,789"/>
-<area shape="rect" id="node4" href="$classModelBody.html" title="Class responsible for making a Model with all the Inventories and Flows created by the user and execu..." alt="" coords="189,191,339,517"/>
-<area shape="rect" id="node5" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="213,5,315,141"/>
-</map>
